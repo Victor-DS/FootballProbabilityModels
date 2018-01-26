@@ -16,4 +16,6 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly 'org.projectlombok:lombok:1.16.20'
     apt "org.projectlombok:lombok:1.16.20"
+    compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
+    compile 'com.google.guava:guava:23.6-jre'
 }
