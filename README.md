@@ -2,7 +2,7 @@
 A poisson-based model to calculate probabilities in soccer matches, based on the paper **A ratings based Poisson model for World Cup soccer simulation** by Dyte and Clarke.
 
 ## TODO
-- [ ] Input leagues and matches from JSON;
+- [x] Input leagues and matches from JSON;
 - [ ] Input Elo Ratings from JSON (Or directly by calling the lib? This could provide more up to date ratings weekly);
 - [ ] Output statistics (correct outcomes predicted after each week, end of championship statistics) into JSON file;
 - [ ] Poisson calculations model;
