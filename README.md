@@ -1,4 +1,6 @@
 # SoccerPoisson
+[![CircleCI](https://circleci.com/gh/Victor-DS/SoccerPoisson.svg?style=svg)](https://circleci.com/gh/Victor-DS/SoccerPoisson)
+
 A poisson-based model to calculate probabilities in soccer matches, based on the paper **A ratings based Poisson model for World Cup soccer simulation** by Dyte and Clarke.
 
 ## TODO
