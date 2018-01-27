@@ -1,0 +1,5329 @@
+[
+  {
+    "champion": "Palmeiras",
+    "name": "Campeonato Brasileiro 2016",
+    "matches": [
+      {
+        "home": "Vitória",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Santa Cruz",
+        "homeGoals": 5,
+        "awayGoals": 0,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Corinthians",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Dec 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Vitória",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Grêmio",
+        "homeGoals": 5,
+        "awayGoals": 1,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Nov 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Atlético-MG",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Botafogo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Figueirense",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Vitória",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Nov 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Santa Cruz",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Nov 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Nov 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Fluminense",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Atlético-PR",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Nov 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Corinthians",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Nov 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Santa Cruz",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Flamengo",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Figueirense",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Oct 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "América-MG",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Atlético-MG",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Flamengo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 16, 2016 1:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 4,
+        "date": "Oct 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Figueirense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Oct 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Coritiba",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Oct 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Oct 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 4,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Oct 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Botafogo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Vitória",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Grêmio",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "América-MG",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Sep 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Atlético-MG",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Sep 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Santa Cruz",
+        "homeGoals": 5,
+        "awayGoals": 3,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Coritiba",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Figueirense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Grêmio",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Grêmio",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Figueirense",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Sep 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Botafogo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "América-MG",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Figueirense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Santa Cruz",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 27, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Grêmio",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 20, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Santa Cruz",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Atlético-MG",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Corinthians",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 13, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Aug 8, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 7, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 6, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Internacional",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Aug 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Santa Cruz",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Botafogo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Coritiba",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Aug 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Palmeiras",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jul 31, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "América-MG",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Botafogo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 24, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Grêmio",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Santa Cruz",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Jul 17, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jul 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Flamengo",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "Jul 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Jul 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 10, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Botafogo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 9, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Jul 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Santa Cruz",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Flamengo",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 3, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 2, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 2, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Botafogo",
+        "homeGoals": 5,
+        "awayGoals": 3,
+        "date": "Jun 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Jun 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Figueirense",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Jun 30, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Cruzeiro",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Santos",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Chapecoense",
+        "homeGoals": 5,
+        "awayGoals": 1,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Grêmio",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "São Paulo",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Botafogo",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Santa Cruz",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 23, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 4,
+        "date": "Jun 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Figueirense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 4,
+        "date": "Jun 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "América-MG",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Botafogo",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 19, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Santa Cruz",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jun 18, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 16, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Atlético-PR",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Vitória",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Grêmio",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "Jun 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 12, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jun 11, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Atlético-MG",
+        "homeGoals": 4,
+        "awayGoals": 4,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Botafogo",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 5, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Santa Cruz",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 4, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 2, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Grêmio",
+        "homeGoals": 4,
+        "awayGoals": 3,
+        "date": "Jun 2, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 2, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 4,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 1, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Botafogo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "May 29, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Santa Cruz",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "América-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 28, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "May 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "May 26, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Cruzeiro",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Vitória",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 25, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Botafogo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "América-MG",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Vitória",
+        "away": "Corinthians",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 22, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Santa Cruz",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 21, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "América-MG",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Botafogo",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Santa Cruz",
+        "away": "Vitória",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "May 15, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 14, 2016 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Atlético-PR",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "May 14, 2016 12:00:00 AM"
+      }
+    ],
+    "year": 2016
+  },
+  {
+    "champion": "Corinthians",
+    "name": "Campeonato Brasileiro 2015",
+    "matches": [
+      {
+        "home": "Grêmio",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Figueirense",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Flamengo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Goiás",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Joinville",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "May 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Grêmio",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "May 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Vasco",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Fluminense",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Joinville",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "May 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Goiás",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Flamengo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Coritiba",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "May 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "May 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "May 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "May 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Vasco",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "May 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Santos",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 4,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Corinthians",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jun 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Goiás",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Grêmio",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Vasco",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Avaí",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jun 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Jun 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Goiás",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jun 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jun 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Vasco",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jun 21, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 21, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 21, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jun 21, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jun 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jun 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Joinville",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "São Paulo",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jun 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Goiás",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jul 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Joinville",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Palmeiras",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Jul 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Santos",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Joinville",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Avaí",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 4,
+        "date": "Jul 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Vasco",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 11, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Figueirense",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 11, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 11, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Coritiba",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Goiás",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Jul 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Jul 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 4,
+        "date": "Jul 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Goiás",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Avaí",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Vasco",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Jul 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "São Paulo",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Jul 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Coritiba",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Joinville",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Internacional",
+        "homeGoals": 5,
+        "awayGoals": 0,
+        "date": "Aug 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atlético-PR",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Sport",
+        "homeGoals": 4,
+        "awayGoals": 3,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Avaí",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Aug 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Cruzeiro",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Goiás",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Aug 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Flamengo",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Vasco",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Avaí",
+        "homeGoals": 5,
+        "awayGoals": 2,
+        "date": "Aug 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Cruzeiro",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Aug 23, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Figueirense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Ponte Preta",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Joinville",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Goiás",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Aug 30, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Vasco",
+        "homeGoals": 6,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Avaí",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 2, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Joinville",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 5, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Figueirense",
+        "homeGoals": 5,
+        "awayGoals": 1,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Corinthians",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 10, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Avaí",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Vasco",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "São Paulo",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 9, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 12, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Joinville",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Santos",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Atlético-MG",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Sep 13, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 4,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Sport",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Avaí",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Atlético-MG",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Vasco",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Sep 16, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Sep 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Grêmio",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Sep 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Fluminense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Santos",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Joinville",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Flamengo",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Atlético-PR",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 20, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Avaí",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 26, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Internacional",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Sep 27, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Sport",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Oct 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Atlético-PR",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 3, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Fluminense",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Figueirense",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Palmeiras",
+        "homeGoals": 5,
+        "awayGoals": 1,
+        "date": "Oct 4, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Avaí",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Coritiba",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Flamengo",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Ponte Preta",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 14, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Goiás",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Chapecoense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Oct 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 17, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Coritiba",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Fluminense",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Vasco",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 4,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Internacional",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Goiás",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Atlético-MG",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "Oct 18, 2015 1:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Joinville",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Oct 24, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Flamengo",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "São Paulo",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Avaí",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Cruzeiro",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Ponte Preta",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Oct 25, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Corinthians",
+        "homeGoals": 0,
+        "awayGoals": 3,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Palmeiras",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Flamengo",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Fluminense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Internacional",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 1, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Oct 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Joinville",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Oct 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Figueirense",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Oct 31, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Coritiba",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Avaí",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Chapecoense",
+        "homeGoals": 2,
+        "awayGoals": 3,
+        "date": "Nov 7, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Atlético-MG",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Goiás",
+        "homeGoals": 4,
+        "awayGoals": 1,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "São Paulo",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Vasco",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Santos",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 8, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Sport",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Nov 15, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "Coritiba",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Nov 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Figueirense",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Nov 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Palmeiras",
+        "homeGoals": 3,
+        "awayGoals": 3,
+        "date": "Nov 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Joinville",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 18, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Atlético-MG",
+        "homeGoals": 4,
+        "awayGoals": 2,
+        "date": "Nov 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Corinthians",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Flamengo",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 19, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Cruzeiro",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 21, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "São Paulo",
+        "homeGoals": 6,
+        "awayGoals": 1,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Grêmio",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Goiás",
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Vasco",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Chapecoense",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Avaí",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Atlético-PR",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Nov 22, 2015 12:00:00 AM"
+      },
+      {
+        "home": "São Paulo",
+        "away": "Figueirense",
+        "homeGoals": 3,
+        "awayGoals": 2,
+        "date": "Nov 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Internacional",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Nov 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Avaí",
+        "away": "Ponte Preta",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 28, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Vasco",
+        "away": "Santos",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Atlético-MG",
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Sport",
+        "away": "Corinthians",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Joinville",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Palmeiras",
+        "away": "Coritiba",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Goiás",
+        "homeGoals": 1,
+        "awayGoals": 3,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-PR",
+        "away": "Flamengo",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Nov 29, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Avaí",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Santos",
+        "away": "Atlético-PR",
+        "homeGoals": 5,
+        "awayGoals": 1,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Ponte Preta",
+        "away": "Sport",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Palmeiras",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Internacional",
+        "away": "Cruzeiro",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Atlético-MG",
+        "away": "Chapecoense",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Figueirense",
+        "away": "Fluminense",
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Vasco",
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Goiás",
+        "away": "São Paulo",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      },
+      {
+        "home": "Joinville",
+        "away": "Grêmio",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "date": "Dec 6, 2015 12:00:00 AM"
+      }
+    ],
+    "year": 2015
+  }
+]
