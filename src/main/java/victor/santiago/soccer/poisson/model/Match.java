@@ -23,9 +23,11 @@ package victor.santiago.soccer.poisson.model;
 
 import java.util.Date;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class Match {
     private String home, away;
     private int homeGoals, awayGoals;
