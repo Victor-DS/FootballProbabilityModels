@@ -1,13 +1,12 @@
 # SoccerPoisson
 [![CircleCI](https://circleci.com/gh/Victor-DS/SoccerPoisson.svg?style=svg)](https://circleci.com/gh/Victor-DS/SoccerPoisson)[![codecov](https://codecov.io/gh/Victor-DS/SoccerPoisson/branch/master/graph/badge.svg)](https://codecov.io/gh/Victor-DS/SoccerPoisson)
 
-A poisson-based model to calculate probabilities in soccer matches, based on the paper **A ratings based Poisson model for World Cup soccer simulation** by Dyte and Clarke.
+A poisson-based model to calculate probabilities in soccer matches.
 
 ## TODO
 - [x] Input leagues and matches from JSON;
-- [ ] Input Elo Ratings from JSON (Or directly by calling the lib? This could provide more up to date ratings weekly);
+- [x] Poisson calculations model;
 - [ ] Output statistics (correct outcomes predicted after each week, end of championship statistics) into JSON file;
-- [ ] Poisson calculations model;
 
 ## LICENSE
 ```
