@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-storagegateway:1.11.306">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-storagegateway/1.11.306/34add01e7d29298e495ca5263e0f38e9e929a780/aws-java-sdk-storagegateway-1.11.306.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-storagegateway/1.11.306/bc29bc28830ec01f28773f3499e1c82ae6172baf/aws-java-sdk-storagegateway-1.11.306-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

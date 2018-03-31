@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-simpleworkflow:1.11.306">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-simpleworkflow/1.11.306/703a00ddabe81d6936984240b1dada403d43f332/aws-java-sdk-simpleworkflow-1.11.306.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-simpleworkflow/1.11.306/d9571694ea6a5b5161deacd3b736e0ac6faf436b/aws-java-sdk-simpleworkflow-1.11.306-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

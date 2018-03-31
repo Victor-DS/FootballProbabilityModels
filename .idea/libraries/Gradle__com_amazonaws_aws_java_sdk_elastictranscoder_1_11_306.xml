@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-elastictranscoder:1.11.306">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-elastictranscoder/1.11.306/69690e0852d0e0da848f4a2542ee73892416b9ce/aws-java-sdk-elastictranscoder-1.11.306.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-elastictranscoder/1.11.306/89d9be6c4f88af64b44ec56fd469cca5db399878/aws-java-sdk-elastictranscoder-1.11.306-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

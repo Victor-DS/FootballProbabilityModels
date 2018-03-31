@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-glacier:1.11.306">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-glacier/1.11.306/f36e22ca6f0c411abccb71fe9f66be3a9affdd7/aws-java-sdk-glacier-1.11.306.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-glacier/1.11.306/ff1fa9fc324980d72b9884d6556e50cc32de9ef0/aws-java-sdk-glacier-1.11.306-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

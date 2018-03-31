@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-athena:1.11.306">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-athena/1.11.306/90e012aef78ffff8704fe9e9785f65b6b3335ab1/aws-java-sdk-athena-1.11.306.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-athena/1.11.306/81e3ae61ddf808c73b6ec063dd1b7b4d922f0b06/aws-java-sdk-athena-1.11.306-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
