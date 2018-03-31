@@ -23,7 +23,7 @@ package victor.santiago.soccer.poisson.calculator;
 
 import static java.util.stream.Collectors.toList;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.ToIntFunction;
 
@@ -31,13 +31,44 @@ import victor.santiago.soccer.poisson.model.Match;
 import victor.santiago.soccer.poisson.model.MatchProbability;
 
 /**
+ * Poisson calculator.
+ *
+ * We're assuming all matches that get here are already sorted.
  *
  */
 public class Calculator {
 
-    public List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches) {
-        //TODO: Code.
-        return Collections.emptyList();
+    public List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches, int goalLimit) {
+        List<MatchProbability> probabilities = new ArrayList<>();
+
+        for (Match match : futureMatches) {
+            probabilities.add(getMatchProbability(match, pastMatches, goalLimit));
+        }
+
+        return probabilities;
+    }
+
+    public MatchProbability getMatchProbability(Match match, List<Match> pastMatches, int goalLimit) {
+        final double expectedNumberOfHomeGoals = getExpectedHomeTeamGoals(match.getHome(), match.getAway(), pastMatches);
+        final double expectedNumberOfAwayGoals = getExpectedAwayTeamGoals(match.getHome(), match.getAway(), pastMatches);
+
+        double[][] scoreProbabilities = new double[goalLimit+1][goalLimit+1];
+
+        double currentProbabilityForHome, currentProbabilityForAway;
+        for (int homeGoal = 0; homeGoal < scoreProbabilities.length; homeGoal++) {
+            for (int awayGoal = 0; awayGoal < scoreProbabilities[homeGoal].length; awayGoal++) {
+                currentProbabilityForHome = getPoissonProbability(homeGoal, expectedNumberOfHomeGoals);
+                currentProbabilityForAway = getPoissonProbability(awayGoal, expectedNumberOfAwayGoals);
+
+                scoreProbabilities[homeGoal][awayGoal] = currentProbabilityForHome * currentProbabilityForAway;
+            }
+        }
+
+        return MatchProbability.builder()
+                               .homeTeam(match.getHome())
+                               .awayTeam(match.getAway())
+                               .scoreProbability(scoreProbabilities)
+                               .build();
     }
 
     /**

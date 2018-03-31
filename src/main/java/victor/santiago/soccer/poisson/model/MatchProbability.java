@@ -21,11 +21,71 @@
 
 package victor.santiago.soccer.poisson.model;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Getter;
 
-@Data
+@Builder
 public class MatchProbability {
+    @Getter
     private String homeTeam, awayTeam;
-    private double homeWinProbability, awayWinProbability, tieProbability;
+
+    @Getter
     private double[][] scoreProbability;
+
+    private double homeWinProbability = -1.0;
+    private double awayWinProbability= -1.0;
+    private double tieProbability = -1.0;
+
+    public double getHomeWinProbability() {
+        if (homeWinProbability > -1.0) {
+            return homeWinProbability;
+        }
+
+        double totalHomeWinProbability = 0.0;
+
+        for (int homeGoal = 0; homeGoal < scoreProbability.length; homeGoal++) {
+            for (int awayGoal = 0; awayGoal < scoreProbability[homeGoal].length; awayGoal++) {
+                if (homeGoal > awayGoal) {
+                    totalHomeWinProbability += scoreProbability[homeGoal][awayGoal];
+                }
+            }
+        }
+
+        this.homeWinProbability = totalHomeWinProbability;
+        return homeWinProbability;
+    }
+
+    public double getAwayWinProbability() {
+        if (awayWinProbability > -1.0) {
+            return awayWinProbability;
+        }
+
+        double totalAwayWinProbability = 0.0;
+
+        for (int homeGoal = 0; homeGoal < scoreProbability.length; homeGoal++) {
+            for (int awayGoal = 0; awayGoal < scoreProbability[homeGoal].length; awayGoal++) {
+                if (awayGoal > homeGoal) {
+                    totalAwayWinProbability += scoreProbability[homeGoal][awayGoal];
+                }
+            }
+        }
+
+        this.awayWinProbability = totalAwayWinProbability;
+        return awayWinProbability;
+    }
+
+    public double getTieProbability() {
+        if (tieProbability > -1.0) {
+            return tieProbability;
+        }
+
+        double totalTieProbability = 0.0;
+
+        for (int goal = 0; goal < scoreProbability.length; goal++) {
+            totalTieProbability += scoreProbability[goal][goal];
+        }
+
+        this.tieProbability = totalTieProbability;
+        return tieProbability;
+    }
 }
