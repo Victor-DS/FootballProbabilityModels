@@ -21,30 +21,16 @@
 
 package victor.santiago.soccer.poisson.modules;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.google.inject.AbstractModule;
-import com.google.inject.Inject;
-import com.google.inject.Provides;
-import com.google.inject.Singleton;
-
-import lombok.AllArgsConstructor;
 
 import victor.santiago.soccer.poisson.dao.SimulatedMatchDAO;
 import victor.santiago.soccer.poisson.dao.dynamodbimpl.SimulatedMatchDynamoDb;
 
-@AllArgsConstructor(onConstructor = @__(@Inject))
 public class SimulatedMatchDaoModule extends AbstractModule {
-
-    private DynamoDBMapper mapper;
 
     @Override
     protected void configure() {
         bind(SimulatedMatchDAO.class).to(SimulatedMatchDynamoDb.class);
     }
 
-    @Provides
-    @Singleton
-    SimulatedMatchDynamoDb getSimulatedMatchDynamoDb() {
-        return new SimulatedMatchDynamoDb(mapper);
-    }
 }
