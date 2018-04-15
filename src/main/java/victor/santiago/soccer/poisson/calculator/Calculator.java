@@ -52,9 +52,10 @@ public class Calculator {
         final double expectedNumberOfHomeGoals = getExpectedHomeTeamGoals(match.getHome(), match.getAway(), pastMatches);
         final double expectedNumberOfAwayGoals = getExpectedAwayTeamGoals(match.getHome(), match.getAway(), pastMatches);
 
-        double[][] scoreProbabilities = new double[goalLimit+1][goalLimit+1];
+        double[][] scoreProbabilities = new double[goalLimit + 1][goalLimit + 1];
 
-        double currentProbabilityForHome, currentProbabilityForAway;
+        double currentProbabilityForHome;
+        double currentProbabilityForAway;
         for (int homeGoal = 0; homeGoal < scoreProbabilities.length; homeGoal++) {
             for (int awayGoal = 0; awayGoal < scoreProbabilities[homeGoal].length; awayGoal++) {
                 currentProbabilityForHome = getPoissonProbability(homeGoal, expectedNumberOfHomeGoals);
@@ -80,7 +81,8 @@ public class Calculator {
      * @return
      */
     public double getPoissonProbability(int numberOfGoals, double expectedNumberOfGoals) {
-        return Math.pow(expectedNumberOfGoals, numberOfGoals) * Math.pow(Math.E, -expectedNumberOfGoals) / factorial(numberOfGoals);
+        return Math.pow(expectedNumberOfGoals, numberOfGoals) *
+                Math.pow(Math.E, -expectedNumberOfGoals) / factorial(numberOfGoals);
     }
 
     /**
@@ -95,7 +97,7 @@ public class Calculator {
             return 1;
         }
 
-        return n * factorial(n-1);
+        return n * factorial(n - 1);
     }
 
     public double getExpectedHomeTeamGoals(String home, String away, List<Match> allMatches) {

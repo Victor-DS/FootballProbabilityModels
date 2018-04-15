@@ -30,8 +30,8 @@ import victor.santiago.soccer.poisson.model.SimulatedMatch;
 
 public interface SimulatedMatchDAO {
 
-    void add(final SimulatedMatch simulatedMatch) throws SdkBaseException;
+    void add(SimulatedMatch simulatedMatch) throws SdkBaseException;
 
-    List<DynamoDBMapper.FailedBatch> add(final List<SimulatedMatch> simulatedMatches) throws SdkBaseException;
+    List<DynamoDBMapper.FailedBatch> add(List<SimulatedMatch> simulatedMatches) throws SdkBaseException;
 
 }

@@ -29,7 +29,9 @@ import lombok.Data;
 @Data
 @Builder
 public class Match {
-    private String home, away;
-    private int homeGoals, awayGoals;
+    private String home;
+    private String away;
+    private int homeGoals;
+    private int awayGoals;
     private Date date;
 }

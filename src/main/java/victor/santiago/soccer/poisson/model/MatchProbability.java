@@ -26,14 +26,18 @@ import lombok.Getter;
 
 @Builder
 public class MatchProbability {
+
     @Getter
-    private String homeTeam, awayTeam;
+    private String homeTeam;
+
+    @Getter
+    private String awayTeam;
 
     @Getter
     private double[][] scoreProbability;
 
     private double homeWinProbability = -1.0;
-    private double awayWinProbability= -1.0;
+    private double awayWinProbability = -1.0;
     private double tieProbability = -1.0;
 
     public double getHomeWinProbability() {
