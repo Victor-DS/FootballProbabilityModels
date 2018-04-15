@@ -19,19 +19,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.model;
+package victor.santiago.soccer.poisson.dao;
 
-import java.util.Date;
+import com.amazonaws.SdkBaseException;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 
-import lombok.Builder;
-import lombok.Data;
+import java.util.List;
 
-@Data
-@Builder
-public class Match {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+import victor.santiago.soccer.poisson.model.SimulatedMatch;
+
+public interface SimulatedMatchDAO {
+
+    void add(SimulatedMatch simulatedMatch) throws SdkBaseException;
+
+    List<DynamoDBMapper.FailedBatch> add(List<SimulatedMatch> simulatedMatches) throws SdkBaseException;
+
 }

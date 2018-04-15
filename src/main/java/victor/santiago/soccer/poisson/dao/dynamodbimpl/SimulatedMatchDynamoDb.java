@@ -19,19 +19,31 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.model;
+package victor.santiago.soccer.poisson.dao.dynamodbimpl;
 
-import java.util.Date;
+import com.amazonaws.SdkBaseException;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.google.inject.Inject;
 
-import lombok.Builder;
-import lombok.Data;
+import java.util.List;
 
-@Data
-@Builder
-public class Match {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+import lombok.RequiredArgsConstructor;
+
+import victor.santiago.soccer.poisson.dao.SimulatedMatchDAO;
+import victor.santiago.soccer.poisson.model.SimulatedMatch;
+
+@RequiredArgsConstructor(onConstructor = @__(@Inject))
+public class SimulatedMatchDynamoDb implements SimulatedMatchDAO {
+
+    private final DynamoDBMapper mapper;
+
+    @Override
+    public void add(SimulatedMatch simulatedMatch) throws SdkBaseException {
+        mapper.save(simulatedMatch);
+    }
+
+    @Override
+    public List<DynamoDBMapper.FailedBatch> add(List<SimulatedMatch> simulatedMatches) throws SdkBaseException {
+        return mapper.batchSave(simulatedMatches);
+    }
 }

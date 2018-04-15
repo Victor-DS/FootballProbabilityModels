@@ -24,17 +24,27 @@ package victor.santiago.soccer.poisson.model;
 import lombok.Builder;
 import lombok.Getter;
 
-@Builder
 public class MatchProbability {
+
     @Getter
-    private String homeTeam, awayTeam;
+    private String homeTeam;
+
+    @Getter
+    private String awayTeam;
 
     @Getter
     private double[][] scoreProbability;
 
     private double homeWinProbability = -1.0;
-    private double awayWinProbability= -1.0;
+    private double awayWinProbability = -1.0;
     private double tieProbability = -1.0;
+
+    @Builder
+    public MatchProbability(String homeTeam, String awayTeam, double[][] scoreProbability) {
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
+        this.scoreProbability = scoreProbability;
+    }
 
     public double getHomeWinProbability() {
         if (homeWinProbability > -1.0) {

@@ -21,17 +21,32 @@
 
 package victor.santiago.soccer.poisson.model;
 
-import java.util.Date;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
-import lombok.Builder;
-import lombok.Data;
+public class MatchProbabilityTest {
 
-@Data
-@Builder
-public class Match {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+    private MatchProbability toTest;
+
+    @Before
+    public void setup() {
+        double[][] mockProbabilities = new double[][] {
+                {0.4, 0.2},
+                {0.0, 0.4}
+        };
+
+        toTest = MatchProbability.builder()
+                                 .homeTeam("A")
+                                 .awayTeam("B")
+                                 .scoreProbability(mockProbabilities)
+                                 .build();
+    }
+
+    @Test
+    public void shouldReturnCorrectProbabilities() {
+        Assert.assertEquals(0.8, toTest.getTieProbability(), 0.001);
+        Assert.assertEquals(0.0, toTest.getHomeWinProbability(), 0.001);
+        Assert.assertEquals(0.2, toTest.getAwayWinProbability(), 0.001);
+    }
 }

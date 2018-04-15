@@ -19,19 +19,22 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.model;
+package victor.santiago.soccer.poisson.modules;
 
-import java.util.Date;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.google.inject.AbstractModule;
+import com.google.inject.Provides;
+import com.google.inject.Singleton;
 
-import lombok.Builder;
-import lombok.Data;
+public class DynamoDbModule extends AbstractModule {
 
-@Data
-@Builder
-public class Match {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+    @Override
+    protected void configure() { }
+
+    @Provides
+    @Singleton
+    DynamoDBMapper getDynamoDbMapper() {
+        return new DynamoDBMapper(AmazonDynamoDBClientBuilder.standard().build());
+    }
 }

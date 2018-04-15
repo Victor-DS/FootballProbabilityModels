@@ -27,7 +27,8 @@ import lombok.Data;
 
 @Data
 public class League implements Comparable<League> {
-    private String champion, name;
+    private String champion;
+    private String name;
     private List<Match> matches;
     private int year;
 

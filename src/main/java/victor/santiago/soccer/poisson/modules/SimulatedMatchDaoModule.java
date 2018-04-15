@@ -19,19 +19,18 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.model;
+package victor.santiago.soccer.poisson.modules;
 
-import java.util.Date;
+import com.google.inject.AbstractModule;
 
-import lombok.Builder;
-import lombok.Data;
+import victor.santiago.soccer.poisson.dao.SimulatedMatchDAO;
+import victor.santiago.soccer.poisson.dao.dynamodbimpl.SimulatedMatchDynamoDb;
 
-@Data
-@Builder
-public class Match {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+public class SimulatedMatchDaoModule extends AbstractModule {
+
+    @Override
+    protected void configure() {
+        bind(SimulatedMatchDAO.class).to(SimulatedMatchDynamoDb.class);
+    }
+
 }
