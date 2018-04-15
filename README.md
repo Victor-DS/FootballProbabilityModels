@@ -6,7 +6,8 @@ A poisson-based model to calculate probabilities in soccer matches.
 ## TODO
 - [x] Input leagues and matches from JSON;
 - [x] Poisson calculations model;
-- [ ] Output statistics (correct outcomes predicted after each week, end of championship statistics) into JSON file;
+- [ ] Implement a CLI to be used in an EC2;
+- [ ] Generate 100,000 simulations for each modern Brazilian championship;
 
 ## LICENSE
 ```
