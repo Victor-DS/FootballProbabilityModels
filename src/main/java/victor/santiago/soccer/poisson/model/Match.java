@@ -28,10 +28,15 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Match {
+public class Match implements Comparable<Match> {
     private String home;
     private String away;
     private int homeGoals;
     private int awayGoals;
     private Date date;
+
+    @Override
+    public int compareTo(Match o) {
+        return this.date.compareTo(o.getDate());
+    }
 }
