@@ -21,23 +21,25 @@
 
 package victor.santiago.soccer.poisson.model;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import lombok.Data;
+import org.junit.Assert;
+import org.junit.Test;
 
-@Data
-public class LeagueMetrics {
-    private Map<Team, Double> champion;
+public class LeagueMetricsTest {
 
-    // Teams probabilities to end up in the top 5 positions;
-    private Map<Team, Double> highRanking;
+    @Test
+    public void shouldReturnTheMostLikelyChampion() {
+        Map<Team, Double> probabilities = new HashMap<>();
+        probabilities.put(new Team("A"), 50.0);
+        probabilities.put(new Team("B"), 25.0);
+        probabilities.put(new Team("C"), 20.0);
+        probabilities.put(new Team("D"), 5.0);
 
-    // Teams probabilities to end up in the low 5 positions;
-    private Map<Team, Double> lowRanking;
+        LeagueMetrics toTest = new LeagueMetrics();
+        toTest.setChampion(probabilities);
 
-    public Team getMostLikelyChampion() {
-        return champion.entrySet().stream()
-                       .max(Map.Entry.comparingByValue())
-                       .get().getKey();
+        Assert.assertEquals(new Team("A"), toTest.getMostLikelyChampion());
     }
 }
