@@ -21,11 +21,36 @@
 
 package victor.santiago.soccer.poisson.metrics;
 
+import java.util.List;
 import java.util.Map;
 
 import victor.santiago.soccer.poisson.model.League;
 import victor.santiago.soccer.poisson.model.LeagueMetrics;
+import victor.santiago.soccer.poisson.model.Match;
 
 public interface Metrics {
-    Map<League, LeagueMetrics> generate(int simulations);
+
+    /**
+     * Generate metrics for a list of leagues based on a history of matches inputed,
+     * and a limit on the goals for each match simulation.
+     *
+     * @param allMatches All the past matches to be used as input data.
+     * @param leaguesToSimulate The leagues to be simulated.
+     * @param goalLimit The goal limit for each match simulation.
+     * @param simulations Number of simulations for each match.
+     * @return A Map containing each league and its metrics.
+     */
+    Map<League, LeagueMetrics> generate(List<Match> allMatches, List<League> leaguesToSimulate, int goalLimit, int simulations);
+
+    /**
+     * Generates metrics for a single league based on a history of matches inputed,
+     * and a limit on the goals for each match simulated.
+     *
+     * @param allMatches All the past matches to be used as input data.
+     * @param leagueToSimulate The league to be simulated.
+     * @param goalLimit The goal limit for each match simulation.
+     * @param simulations Number of simulations for each match.
+     * @return The metrics for the league.
+     */
+    LeagueMetrics generate(List<Match> allMatches, League leagueToSimulate, int goalLimit, int simulations);
 }
