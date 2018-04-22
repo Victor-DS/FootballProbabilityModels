@@ -19,32 +19,27 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.util;
+package victor.santiago.soccer.poisson.model;
 
-import java.io.IOException;
-import java.nio.file.NoSuchFileException;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import victor.santiago.soccer.poisson.model.League;
-
-public class JsonUtilTest {
-
-    private static final String SAMPLE_JSON = "";
-
-    private JsonUtil toTest = new JsonUtil();
+public class LeagueMetricsTest {
 
     @Test
-    public void shouldParseList() throws IOException {
-        List<League> result = toTest.getLeagues("src/test/resources/sample.json");
-        Assert.assertEquals(2, result.size());
-        Assert.assertEquals("Palmeiras", result.get(0).getChampion());
-    }
+    public void shouldReturnTheMostLikelyChampion() {
+        Map<Team, Double> probabilities = new HashMap<>();
+        probabilities.put(new Team("A"), 50.0);
+        probabilities.put(new Team("B"), 25.0);
+        probabilities.put(new Team("C"), 20.0);
+        probabilities.put(new Team("D"), 5.0);
 
-    @Test(expected = NoSuchFileException.class)
-    public void shouldNotFindFile() throws Exception {
-        toTest.getLeagues("invalid_path.json");
+        LeagueMetrics toTest = new LeagueMetrics();
+        toTest.setChampion(probabilities);
+
+        Assert.assertEquals(new Team("A"), toTest.getMostLikelyChampion());
     }
 }

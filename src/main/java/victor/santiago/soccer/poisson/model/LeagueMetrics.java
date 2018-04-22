@@ -21,22 +21,23 @@
 
 package victor.santiago.soccer.poisson.model;
 
-import java.util.Date;
+import java.util.Map;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
-public class Match implements Comparable<Match> {
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
+public class LeagueMetrics {
+    private Map<Team, Double> champion;
 
-    @Override
-    public int compareTo(Match o) {
-        return this.date.compareTo(o.getDate());
+    // Teams probabilities to end up in the top 5 positions;
+    private Map<Team, Double> highRanking;
+
+    // Teams probabilities to end up in the low 5 positions;
+    private Map<Team, Double> lowRanking;
+
+    public Team getMostLikelyChampion() {
+        return champion.entrySet().stream()
+                       .max(Map.Entry.comparingByValue())
+                       .get().getKey();
     }
 }

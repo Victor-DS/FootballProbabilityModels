@@ -21,40 +21,27 @@
 
 package victor.santiago.soccer.poisson.util;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
-
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.nio.file.NoSuchFileException;
 import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 import victor.santiago.soccer.poisson.model.League;
 
-public class JsonUtil {
+public class SerializerUtilTest {
 
-    private final Gson gson;
-
-    public JsonUtil() {
-        gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .setDateFormat("MMM dd, yyyy HH:mm:ss aa")
-                .create();
+    @Test
+    public void shouldParseList() throws IOException {
+        List<League> result = SerializerUtil.getLeagues("src/test/resources/sample.json");
+        Assert.assertEquals(2, result.size());
+        Assert.assertEquals("Palmeiras", result.get(0).getChampion());
     }
 
-    /**
-     * Parses a list of Leagues from a JSON file path.
-     *
-     * @param path File path.
-     * @return List of leagues from the Json file.
-     * @throws IOException Thrown if can't read file.
-     */
-    public List<League> getLeagues(String path) throws IOException {
-        byte[] encoded = Files.readAllBytes(Paths.get(path));
-        String json = new String(encoded, StandardCharsets.UTF_8);
-        return gson.fromJson(json, new TypeToken<ArrayList<League>>(){}.getType());
+    @Test(expected = NoSuchFileException.class)
+    public void shouldNotFindFile() throws Exception {
+        SerializerUtil.getLeagues("invalid_path.json");
     }
+
 }
