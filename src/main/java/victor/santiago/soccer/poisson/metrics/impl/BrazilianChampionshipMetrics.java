@@ -94,7 +94,7 @@ public class BrazilianChampionshipMetrics implements Metrics {
         matchesFromLeague.forEach(x -> standings.add(generateStandings(x)));
         matchesFromLeague.clear();
 
-        return getMetricsFromStandings(standings);
+        return getMetricsFromStandings(league.getName(), standings);
     }
 
     private List<SimulatedMatch> getSimulatedMatchesFromLeague(League league,
@@ -132,8 +132,8 @@ public class BrazilianChampionshipMetrics implements Metrics {
                 .collect(Collectors.toList());
     }
 
-    private LeagueMetrics getMetricsFromStandings(List<List<Standing>> leaguesStandings) {
-        LeagueMetrics metrics = new LeagueMetrics();
+    private LeagueMetrics getMetricsFromStandings(String leagueName, List<List<Standing>> leaguesStandings) {
+        LeagueMetrics metrics = new LeagueMetrics(leagueName);
         metrics.setChampion(getProbabilitiesByPosition(leaguesStandings, 0));
         metrics.setHighRanking(getProbabilitiesByPositionRange(leaguesStandings, 0, 4));
 

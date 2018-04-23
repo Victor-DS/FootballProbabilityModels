@@ -24,9 +24,14 @@ package victor.santiago.soccer.poisson.model;
 import java.util.Map;
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@RequiredArgsConstructor
 public class LeagueMetrics {
+
+    private final String leagueName;
+
     private Map<Team, Double> champion;
 
     // Teams probabilities to end up in the top 5 positions;
