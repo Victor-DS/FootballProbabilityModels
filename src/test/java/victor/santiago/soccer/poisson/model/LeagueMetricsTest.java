@@ -37,7 +37,7 @@ public class LeagueMetricsTest {
         probabilities.put(new Team("C"), 20.0);
         probabilities.put(new Team("D"), 5.0);
 
-        LeagueMetrics toTest = new LeagueMetrics();
+        LeagueMetrics toTest = new LeagueMetrics("Some League");
         toTest.setChampion(probabilities);
 
         Assert.assertEquals(new Team("A"), toTest.getMostLikelyChampion());
