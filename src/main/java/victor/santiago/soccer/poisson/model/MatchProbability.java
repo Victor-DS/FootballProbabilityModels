@@ -46,6 +46,10 @@ public class MatchProbability {
         this.scoreProbability = scoreProbability;
     }
 
+    public double getProbability(int homeScore, int awayScore) {
+        return scoreProbability[homeScore][awayScore] * 100;
+    }
+
     public double getHomeWinProbability() {
         if (homeWinProbability > -1.0) {
             return homeWinProbability;
@@ -56,7 +60,7 @@ public class MatchProbability {
         for (int homeGoal = 0; homeGoal < scoreProbability.length; homeGoal++) {
             for (int awayGoal = 0; awayGoal < scoreProbability[homeGoal].length; awayGoal++) {
                 if (homeGoal > awayGoal) {
-                    totalHomeWinProbability += scoreProbability[homeGoal][awayGoal];
+                    totalHomeWinProbability += scoreProbability[homeGoal][awayGoal] * 100;
                 }
             }
         }
@@ -75,7 +79,7 @@ public class MatchProbability {
         for (int homeGoal = 0; homeGoal < scoreProbability.length; homeGoal++) {
             for (int awayGoal = 0; awayGoal < scoreProbability[homeGoal].length; awayGoal++) {
                 if (awayGoal > homeGoal) {
-                    totalAwayWinProbability += scoreProbability[homeGoal][awayGoal];
+                    totalAwayWinProbability += scoreProbability[homeGoal][awayGoal] * 100;
                 }
             }
         }
@@ -92,7 +96,7 @@ public class MatchProbability {
         double totalTieProbability = 0.0;
 
         for (int goal = 0; goal < scoreProbability.length; goal++) {
-            totalTieProbability += scoreProbability[goal][goal];
+            totalTieProbability += scoreProbability[goal][goal] * 100;
         }
 
         this.tieProbability = totalTieProbability;
