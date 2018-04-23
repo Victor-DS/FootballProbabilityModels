@@ -107,7 +107,7 @@ public class SerializerUtil {
         return map.keySet().stream()
                   .map(Team::getName)
                   .sorted()
-                  .collect(joining(","));
+                  .collect(joining(";"));
     }
 
 }
