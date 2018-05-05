@@ -34,6 +34,7 @@ import java.nio.file.Paths;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -109,7 +110,7 @@ public class SerializerUtil {
 
     private String mapKeysToSortedString(Map<Team, Double> map, int limit) {
         return map.entrySet().stream()
-                  .sorted(Map.Entry.comparingByValue())
+                  .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
                   .map(x -> x.getKey().getName())
                   .limit(limit)
                   .collect(joining("/"));
