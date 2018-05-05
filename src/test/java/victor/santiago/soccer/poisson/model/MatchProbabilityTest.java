@@ -45,8 +45,9 @@ public class MatchProbabilityTest {
 
     @Test
     public void shouldReturnCorrectProbabilities() {
-        Assert.assertEquals(0.8, toTest.getTieProbability(), 0.001);
+        Assert.assertEquals(0.80, toTest.getTieProbability(), 0.001);
         Assert.assertEquals(0.0, toTest.getHomeWinProbability(), 0.001);
-        Assert.assertEquals(0.2, toTest.getAwayWinProbability(), 0.001);
+        Assert.assertEquals(0.20, toTest.getAwayWinProbability(), 0.001);
+        Assert.assertEquals(1.0, toTest.getTotalSumOfProbabilities(), 0.001);
     }
 }
