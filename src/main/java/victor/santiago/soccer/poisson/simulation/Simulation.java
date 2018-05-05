@@ -24,11 +24,12 @@ package victor.santiago.soccer.poisson.simulation;
 import com.google.inject.Inject;
 
 import java.time.Instant;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.IntStream;
 
 import lombok.AllArgsConstructor;
 
@@ -44,13 +45,11 @@ public class Simulation {
 
     private final Calculator calculator;
 
-    public Map<Match, List<SimulatedMatch>> simulate(String leagueName, List<Match> matches, List<Match> pastMatches,
+    public Map<Match, SimulatedMatch[]> simulate(String leagueName, List<Match> matches, List<Match> pastMatches,
                                                      int goalLimit, int times) {
-        Map<Match, List<SimulatedMatch>> simulatedMatches = new HashMap<>();
+        Map<Match, SimulatedMatch[]> simulatedMatches = new ConcurrentHashMap<>();
 
-        for (Match match : matches) {
-            simulatedMatches.put(match, simulate(leagueName, match, pastMatches, goalLimit, times));
-        }
+        matches.parallelStream().forEach(match -> simulatedMatches.put(match, simulate(leagueName, match, pastMatches, goalLimit, times)));
 
         return simulatedMatches;
     }
@@ -65,34 +64,32 @@ public class Simulation {
      * @param times The amount of times you want to simulate the given match.
      * @return A list of this match simulated N times.
      */
-    public List<SimulatedMatch> simulate(String leagueName, Match match, List<Match> pastMatches, int goalLimit, int times) {
+    public SimulatedMatch[] simulate(String leagueName, Match match, List<Match> pastMatches, int goalLimit, int times) {
         MatchProbability probability = calculator.getMatchProbability(match, pastMatches, goalLimit);
-        List<SimulatedMatch> simulatedMatches = new ArrayList<>();
+        SimulatedMatch[] simulatedMatches = new SimulatedMatch[times];
 
-        while (times > 0) {
-            simulatedMatches.add(getRandomSimulation(leagueName, probability, match));
-            times--;
-        }
+        IntStream.range(0, times).parallel().forEach(
+                n -> simulatedMatches[n] = getRandomSimulation(leagueName, probability, match)
+        );
 
         return simulatedMatches;
     }
 
-    public List<SimulatedMatch> simulate(Match match, List<Match> pastMatches, int goalLimit, int times) {
+    public SimulatedMatch[] simulate(Match match, List<Match> pastMatches, int goalLimit, int times) {
         return simulate(NO_LEAGUE, match, pastMatches, goalLimit, times);
     }
 
     private SimulatedMatch getRandomSimulation(final String league, MatchProbability matchProbability, Match originalMatch) {
-        double totalProbabilities = matchProbability.getHomeWinProbability() +
-                matchProbability.getAwayWinProbability() +
-                matchProbability.getTieProbability() + 1;
+        double totalProbabilities = matchProbability.getTotalSumOfProbabilities();
         final double[][] scoreProbabilities = matchProbability.getScoreProbability();
+        final int goalLimit = scoreProbabilities.length;
 
         double randomValue = ThreadLocalRandom.current().nextDouble(0, totalProbabilities);
 
         int homeScore = 0;
         int awayScore = 0;
-        for (int homeGoal = 0; homeGoal < scoreProbabilities.length; homeGoal++) {
-            for (int awayGoal = 0; awayGoal < scoreProbabilities[homeGoal].length; awayGoal++) {
+        for (int homeGoal = goalLimit - 1; homeGoal >= 0; homeGoal--) {
+            for (int awayGoal = goalLimit - 1; awayGoal >= 0; awayGoal--) {
                 randomValue -= scoreProbabilities[homeGoal][awayGoal];
 
                 if (randomValue <= 0.0) {
@@ -100,6 +97,10 @@ public class Simulation {
                     awayScore = awayGoal;
                     break;
                 }
+            }
+
+            if (randomValue <= 0.0) {
+                break;
             }
         }
 
