@@ -1,14 +1,17 @@
 # SoccerPoisson
+
 [![CircleCI](https://circleci.com/gh/Victor-DS/SoccerPoisson.svg?style=svg)](https://circleci.com/gh/Victor-DS/SoccerPoisson)[![codecov](https://codecov.io/gh/Victor-DS/SoccerPoisson/branch/master/graph/badge.svg)](https://codecov.io/gh/Victor-DS/SoccerPoisson)
 
 A poisson-based model to calculate probabilities in soccer matches.
 
 ## Poisson Distribution
+
 > In probability theory and statistics, the Poisson distribution, named after French mathematician Siméon Denis Poisson, is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant rate and independently of the time since the last event.
 
 [Wikipedia](https://en.wikipedia.org/wiki/Poisson_distribution)
 
 ## Soccer Model
+
 The idea behind this model is that the number of goals scored by a team is a Poisson distribution and independent from the other team.
 
 Having that in mind, we calculate the expected number of goals that both teams team would score (considering the team's past matches), and calculate all the score probabilities with a given goal limit.
@@ -30,7 +33,7 @@ Injector injector = Guice.createInjector(new Modules());
 Metrics metrics = injector.getInstance(BrazilianChampionshipMetrics.class);
 ```
 
-Then, just serialize your data, and generate your metrics:
+Then load your data from the JSON files:
 
 ```java
 List<League> allLeagues = SerializerUtil.getLeagues("/Users/Me/DataOne.json", "/Users/Me/DataTwo.json", "/Users/Me/InfiniteData.json");
@@ -38,25 +41,31 @@ List<League> leaguesToSimulate = SerializerUtil.getLeagues("/Users/Me/LeaguesToS
 
 List<Match> allMatches = new ArrayList<>();
 allLeagues.forEach(x -> allMatches.addAll(x.getMatches()));
-
-final int goalLimit = 5;
-final int simulations = 100 * 1000;
-Map<League, LeagueMetrics> leagueMetrics = metrics.generate(allMatches, leaguesToSimulate, goalLimit, simulations);
 ```
 
-Then, finally you can just serialize your data to a CSV file and use it however you'd like it.
+Now you can simulate it the leagues, and generate metrics based on it (like who is the most likely champion?):
 
 ```java
-SerializerUtil.saveMetricsToCsv("/Users/victords/TCC/Dados/MyCSV.csv", leagueMetrics.values());
+final int simulations = 10_000; // Number of simulations per match.
+final int historyLimit = 380; // Maximum number of past matches to be used on calculations. (Use -1 to use all)
+final int goalLimit = 5; // Limit of goals per match. This example will use all combinations from 0x0 to 5x5.
+Map<League, LeagueMetrics> leagueMetrics = metrics.generate(allMatches, historyLimit, leaguesToSimulate, goalLimit, simulations);
+```
+
+If you'd like you can just serialize your data to a CSV file.
+
+```java
+SerializerUtil.saveMetricsToCsv("/Users/Me/MyData.csv", leagueMetrics.values());
 ```
 
 ## TODO
+
 - [x] Input leagues and matches from JSON;
 - [x] Poisson calculations model;
-- [ ] Implement a CLI to be used in an EC2;
-- [ ] Generate 100,000 simulations for each modern Brazilian championship;
+- [ ] Implement metrics for more types of championships;
 
 ## LICENSE
+
 ```
 The MIT License (MIT)
 
