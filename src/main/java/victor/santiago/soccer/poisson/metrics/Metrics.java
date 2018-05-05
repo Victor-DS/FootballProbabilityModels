@@ -31,26 +31,38 @@ import victor.santiago.soccer.poisson.model.Match;
 public interface Metrics {
 
     /**
-     * Generate metrics for a list of leagues based on a history of matches inputed,
+     * Generate metrics for a list of leagues based on a raw list of matches,
      * and a limit on the goals for each match simulation.
      *
-     * @param allMatches All the past matches to be used as input data.
+     * The algorithm will sort and select the matches prior to the date of
+     * the first match of the leagues you want to simulate, according to a limit,
+     * then proceed to generate random simulations based on the probabilities calculated
+     * and finally generate metrics based on those simulations.
+     *
+     * @param allMatches Raw list of past matches that can be used.
+     * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param leaguesToSimulate The leagues to be simulated.
      * @param goalLimit The goal limit for each match simulation.
      * @param simulations Number of simulations for each match.
      * @return A Map containing each league and its metrics.
      */
-    Map<League, LeagueMetrics> generate(List<Match> allMatches, List<League> leaguesToSimulate, int goalLimit, int simulations);
+    Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate, int goalLimit, int simulations);
 
     /**
-     * Generates metrics for a single league based on a history of matches inputed,
-     * and a limit on the goals for each match simulated.
+     * Generate metrics for a list of leagues based on a raw list of matches,
+     * and a limit on the goals for each match simulation.
+     *
+     * The algorithm will sort and select the matches prior to the date of
+     * the first match of the leagues you want to simulate, according to a limit,
+     * then proceed to generate random simulations based on the probabilities calculated
+     * and finally generate metrics based on those simulations.
      *
      * @param allMatches All the past matches to be used as input data.
+     * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param leagueToSimulate The league to be simulated.
      * @param goalLimit The goal limit for each match simulation.
      * @param simulations Number of simulations for each match.
      * @return The metrics for the league.
      */
-    LeagueMetrics generate(List<Match> allMatches, League leagueToSimulate, int goalLimit, int simulations);
+    LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate, int goalLimit, int simulations);
 }
