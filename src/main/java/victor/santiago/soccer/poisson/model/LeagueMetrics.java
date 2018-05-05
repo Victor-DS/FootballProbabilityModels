@@ -50,7 +50,7 @@ public class LeagueMetrics {
 
     public LeagueMetrics(List<LeagueMetrics> leagueMetricsList) {
         if (leagueMetricsList.isEmpty()) {
-            String message = "List of league metrics must NOT be null.";
+            String message = "List of league metrics must NOT be empty.";
             throw new IllegalArgumentException(message);
         }
 
