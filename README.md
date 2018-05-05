@@ -17,6 +17,39 @@ This model can give you not only the most likely winner, but the most likely sco
 
 The software can also simulate an entire league and generate metrics based on it, such as the teams with the most chances to win and probabilities for a team to end up in the lowest or highest end of the standings.
 
+## Examples
+
+This software uses Guice as a dependency injection library, so always remember to add the modules when creating the injector.
+
+For a simple example, let's say you want simulation metrics for a a list of leagues. 
+
+First, you create your injector and get your League metrics instance:
+
+```java
+Injector injector = Guice.createInjector(new Modules());
+Metrics metrics = injector.getInstance(BrazilianChampionshipMetrics.class);
+```
+
+Then, just serialize your data, and generate your metrics:
+
+```java
+List<League> allLeagues = SerializerUtil.getLeagues("/Users/Me/DataOne.json", "/Users/Me/DataTwo.json", "/Users/Me/InfiniteData.json");
+List<League> leaguesToSimulate = SerializerUtil.getLeagues("/Users/Me/LeaguesToSimulate.json");
+
+List<Match> allMatches = new ArrayList<>();
+allLeagues.forEach(x -> allMatches.addAll(x.getMatches()));
+
+final int goalLimit = 5;
+final int simulations = 100 * 1000;
+Map<League, LeagueMetrics> leagueMetrics = metrics.generate(allMatches, leaguesToSimulate, goalLimit, simulations);
+```
+
+Then, finally you can just serialize your data to a CSV file and use it however you'd like it.
+
+```java
+SerializerUtil.saveMetricsToCsv("/Users/victords/TCC/Dados/MyCSV.csv", leagueMetrics.values());
+```
+
 ## TODO
 - [x] Input leagues and matches from JSON;
 - [x] Poisson calculations model;
