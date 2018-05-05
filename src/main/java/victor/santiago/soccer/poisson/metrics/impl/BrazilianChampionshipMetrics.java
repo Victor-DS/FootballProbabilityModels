@@ -31,6 +31,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 import lombok.RequiredArgsConstructor;
@@ -47,40 +48,99 @@ import victor.santiago.soccer.poisson.simulation.Simulation;
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class BrazilianChampionshipMetrics implements Metrics {
 
+    // TODO: Make it more customizable, either pass as a parameter or set in a config file.
+    private static final int METRICS_BATCH_SIZE = 100;
+
     private final Simulation simulator;
 
     @Override
-    public Map<League, LeagueMetrics> generate(List<Match> allMatches, List<League> leaguesToSimulate,
+    public Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate,
                                                int goalLimit, int simulations) {
         Collections.sort(allMatches);
+        Map<League, LeagueMetrics> results = new ConcurrentHashMap<>();
 
-        Map<League, LeagueMetrics> results = new HashMap<>();
-
-        for (League league : leaguesToSimulate) {
-            results.put(league, generateMetricsForLeague(allMatches, league, goalLimit, simulations));
-        }
+        leaguesToSimulate.parallelStream()
+                         .forEach(league -> results.put(league,
+                                 generateMetricsForLeague(allMatches, historyLimit, league,
+                                         goalLimit, simulations, METRICS_BATCH_SIZE)));
 
         return results;
     }
 
     @Override
-    public LeagueMetrics generate(List<Match> allMatches, League leagueToSimulate, int goalLimit, int simulations) {
+    public LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate,
+                                  int goalLimit, int simulations) {
         Collections.sort(allMatches);
-        return generateMetricsForLeague(allMatches, leagueToSimulate, goalLimit, simulations);
+        return generateMetricsForLeague(allMatches, historyLimit, leagueToSimulate, goalLimit, simulations, METRICS_BATCH_SIZE);
     }
 
-    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, League league, int goalLimit, int simulations) {
-        Date firstMatchDate = league.getMatches().get(0).getDate();
-        List<Match> filteredMatches = allMatches.stream()
-                .filter(x -> x.getDate().before(firstMatchDate))
-                .collect(Collectors.toList());
+    /**
+     * Generates metrics for a league by breaking up the metrics into small batches,
+     * calculating the metrics for those small batches, and then unifying them.
+     *
+     * @param allMatches List of all past matches.
+     * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
+     * @param league League to be simulated.
+     * @param goalLimit Limit of goals to simulate on a single match.
+     * @param simulations Number of simulations to be made by match.
+     * @param batchSize Size of each individual simulation batch.
+     * @return The unified league metrics.
+     */
+    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league, int goalLimit,
+                                                   int simulations, int batchSize) {
+        final Date firstMatchDate = league.getMatches().get(0).getDate();
+        final List<Match> limitedMatches = getLimitedMatchesBeforeDate(allMatches, firstMatchDate, historyLimit);
 
-        Map<Match, List<SimulatedMatch>> simulatedMatches = new HashMap<>();
+        List<LeagueMetrics> batchOfMetrics = new ArrayList<>();
+
+        while (simulations > 0) {
+            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, goalLimit, simulations));
+            simulations -= batchSize;
+        }
+
+        if (simulations < 0) {
+            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, goalLimit, batchSize + simulations));
+        }
+
+        return new LeagueMetrics(batchOfMetrics);
+    }
+
+    /**
+     * Calculates metrics for a league without breaking it up into small batches.
+     * May cause GC overhead with large numbers. Proceed with caution.
+     *
+     * @param allMatches List of all past matches.
+     * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
+     * @param league League to be simulated.
+     * @param goalLimit Limit of goals to simulate on a single match.
+     * @param simulations Number of simulations to be made by match.
+     * @return The metrics from the simulations.
+     */
+    @Deprecated
+    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league,
+                                                   int goalLimit, int simulations) {
+        Date firstMatchDate = league.getMatches().get(0).getDate();
+        List<Match> limitedMatches = getLimitedMatchesBeforeDate(allMatches, firstMatchDate, historyLimit);
+        return generateMetricsForLeague(limitedMatches, league, goalLimit, simulations);
+    }
+
+    /**
+     * Receives the prepared matches list and final simulations number to generate metrics.
+     *
+     * @param limitedMatches List of all the matches that will be used on the calculations.
+     * @param league The league to be simulated.
+     * @param goalLimit Limit of goals to simulate on a single match.
+     * @param simulations Number of simulations to be made by match.
+     * @return The metrics from the simulations.
+     */
+    private LeagueMetrics generateMetricsForLeague(List<Match> limitedMatches, League league, int goalLimit, int simulations) {
+        Map<Match, SimulatedMatch[]> simulatedMatches = new HashMap<>();
 
         for (Match match : league.getMatches()) {
             simulatedMatches.put(match, simulator.simulate(league.getName(), match,
-                    filteredMatches, goalLimit, simulations));
-            filteredMatches.add(match);
+                    limitedMatches, goalLimit, simulations));
+            limitedMatches.add(match);
+            limitedMatches.remove(0);
         }
 
         List<List<SimulatedMatch>> matchesFromLeague = new ArrayList<>();
@@ -94,11 +154,22 @@ public class BrazilianChampionshipMetrics implements Metrics {
         matchesFromLeague.forEach(x -> standings.add(generateStandings(x)));
         matchesFromLeague.clear();
 
-        return getMetricsFromStandings(league.getName(), standings);
+        return getMetricsFromStandings(league.getName(), standings, simulations);
+    }
+
+    private List<Match> getLimitedMatchesBeforeDate(List<Match> allOrderedMatches, Date firstMatchDate, int limit) {
+        if (limit == -1) {
+            return allOrderedMatches;
+        }
+
+        return allOrderedMatches.stream()
+                                .filter(x -> x.getDate().before(firstMatchDate))
+                                .limit(limit)
+                                .collect(Collectors.toList());
     }
 
     private List<SimulatedMatch> getSimulatedMatchesFromLeague(League league,
-                                                               Map<Match, List<SimulatedMatch>> simulatedMatches,
+                                                               Map<Match, SimulatedMatch[]> simulatedMatches,
                                                                int currentIndex) {
         List<SimulatedMatch> matches = new ArrayList<>();
 
@@ -106,7 +177,7 @@ public class BrazilianChampionshipMetrics implements Metrics {
         for (int matchIndex = 0; matchIndex < league.getMatches().size(); matchIndex++) {
             currentMatch = league.getMatches().get(matchIndex);
 
-            matches.add(simulatedMatches.get(currentMatch).get(currentIndex));
+            matches.add(simulatedMatches.get(currentMatch)[currentIndex]);
         }
 
         return matches;
@@ -132,8 +203,9 @@ public class BrazilianChampionshipMetrics implements Metrics {
                 .collect(Collectors.toList());
     }
 
-    private LeagueMetrics getMetricsFromStandings(String leagueName, List<List<Standing>> leaguesStandings) {
+    private LeagueMetrics getMetricsFromStandings(String leagueName, List<List<Standing>> leaguesStandings, int simulations) {
         LeagueMetrics metrics = new LeagueMetrics(leagueName);
+        metrics.setNumberOfSimulations(simulations);
         metrics.setChampion(getProbabilitiesByPosition(leaguesStandings, 0));
         metrics.setHighRanking(getProbabilitiesByPositionRange(leaguesStandings, 0, 4));
 
