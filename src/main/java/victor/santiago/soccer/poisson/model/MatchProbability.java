@@ -46,6 +46,10 @@ public class MatchProbability {
         this.scoreProbability = scoreProbability;
     }
 
+    public double getProbability(int homeScore, int awayScore) {
+        return scoreProbability[homeScore][awayScore] * 100;
+    }
+
     public double getHomeWinProbability() {
         if (homeWinProbability > -1.0) {
             return homeWinProbability;
@@ -97,5 +101,9 @@ public class MatchProbability {
 
         this.tieProbability = totalTieProbability;
         return tieProbability;
+    }
+
+    public double getTotalSumOfProbabilities() {
+        return getHomeWinProbability() + getAwayWinProbability() + getTieProbability();
     }
 }

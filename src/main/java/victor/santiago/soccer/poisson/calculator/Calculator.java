@@ -206,6 +206,10 @@ public class Calculator {
     }
 
     private Double getAverageGoals(List<Match> matches, ToIntFunction<Match> mapper) {
+        if (matches.size() == 0) {
+            return 0.00;
+        }
+
         double goalSum = matches.stream().mapToInt(mapper).sum();
         return goalSum / matches.size();
     }

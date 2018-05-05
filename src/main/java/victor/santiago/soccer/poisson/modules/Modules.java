@@ -19,35 +19,38 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.model;
+package victor.santiago.soccer.poisson.modules;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import com.google.inject.AbstractModule;
+import com.google.inject.Provides;
+import com.google.inject.Singleton;
 
-public class MatchProbabilityTest {
+import victor.santiago.soccer.poisson.calculator.Calculator;
+import victor.santiago.soccer.poisson.metrics.Metrics;
+import victor.santiago.soccer.poisson.metrics.impl.BrazilianChampionshipMetrics;
+import victor.santiago.soccer.poisson.simulation.Simulation;
 
-    private MatchProbability toTest;
-
-    @Before
-    public void setup() {
-        double[][] mockProbabilities = new double[][] {
-                {0.4, 0.2},
-                {0.0, 0.4}
-        };
-
-        toTest = MatchProbability.builder()
-                                 .homeTeam("A")
-                                 .awayTeam("B")
-                                 .scoreProbability(mockProbabilities)
-                                 .build();
+public class Modules extends AbstractModule {
+    @Override
+    protected void configure() {
+        bind(Metrics.class).to(BrazilianChampionshipMetrics.class);
     }
 
-    @Test
-    public void shouldReturnCorrectProbabilities() {
-        Assert.assertEquals(0.80, toTest.getTieProbability(), 0.001);
-        Assert.assertEquals(0.0, toTest.getHomeWinProbability(), 0.001);
-        Assert.assertEquals(0.20, toTest.getAwayWinProbability(), 0.001);
-        Assert.assertEquals(1.0, toTest.getTotalSumOfProbabilities(), 0.001);
+    @Provides
+    @Singleton
+    Calculator getCalculator() {
+        return new Calculator();
+    }
+
+    @Provides
+    @Singleton
+    Simulation getSimulation() {
+        return new Simulation(getCalculator());
+    }
+
+    @Provides
+    @Singleton
+    BrazilianChampionshipMetrics getBrazilianChampionshipMetrics() {
+        return new BrazilianChampionshipMetrics(getSimulation());
     }
 }
