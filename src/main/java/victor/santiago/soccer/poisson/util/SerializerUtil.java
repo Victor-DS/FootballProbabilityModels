@@ -31,6 +31,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -96,18 +97,22 @@ public class SerializerUtil {
     private String getLeagueMetricsCsvLine(LeagueMetrics leagueMetrics) {
         Team mostLikelyChampion = leagueMetrics.getMostLikelyChampion();
         Map<Team, Double> champion = leagueMetrics.getChampion();
-        final String highRanking = mapKeysToSortedString(leagueMetrics.getHighRanking());
-        final String lowRanking = mapKeysToSortedString(leagueMetrics.getLowRanking());
+        final String highRanking = mapKeysToSortedString(leagueMetrics.getHighRanking(), 5);
+        final String lowRanking = mapKeysToSortedString(leagueMetrics.getLowRanking(), 5);
 
-        return String.format("%s,%s,%s,%s,%s", leagueMetrics.getLeagueName(), mostLikelyChampion.getName(),
+        final String line = String.format("%s,%s,%s,%s,%s", leagueMetrics.getLeagueName(), mostLikelyChampion.getName(),
                 champion.get(mostLikelyChampion), highRanking, lowRanking);
+
+        return Normalizer.normalize(line, Normalizer.Form.NFD)
+                         .replaceAll("[^\\p{ASCII}]", "");
     }
 
-    private String mapKeysToSortedString(Map<Team, Double> map) {
-        return map.keySet().stream()
-                  .map(Team::getName)
-                  .sorted()
-                  .collect(joining(";"));
+    private String mapKeysToSortedString(Map<Team, Double> map, int limit) {
+        return map.entrySet().stream()
+                  .sorted(Map.Entry.comparingByValue())
+                  .map(x -> x.getKey().getName())
+                  .limit(limit)
+                  .collect(joining("/"));
     }
 
 }
