@@ -21,6 +21,8 @@
 
 package victor.santiago.soccer.poisson.model;
 
+import com.google.common.collect.Lists;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,5 +43,42 @@ public class LeagueMetricsTest {
         toTest.setChampion(probabilities);
 
         Assert.assertEquals(new Team("A"), toTest.getMostLikelyChampion());
+    }
+
+    @Test
+    public void shouldReturnMergedMetrics() {
+        final Team teamA = new Team("A");
+        final Team teamB = new Team("B");
+
+        Map<Team, Double> probabilitiesOne = new HashMap<>();
+        probabilitiesOne.put(teamA, 1.0);
+        probabilitiesOne.put(teamB, 0.0);
+
+        Map<Team, Double> probabilitiesTwo = new HashMap<>();
+        probabilitiesTwo.put(teamA, 0.1);
+        probabilitiesTwo.put(teamB, 0.9);
+
+        LeagueMetrics metricsOne = new LeagueMetrics("League A");
+        metricsOne.setNumberOfSimulations(10);
+        metricsOne.setChampion(probabilitiesOne);
+        metricsOne.setHighRanking(probabilitiesOne);
+        metricsOne.setLowRanking(probabilitiesOne);
+
+        LeagueMetrics metricsTwo = new LeagueMetrics("League A");
+        metricsTwo.setNumberOfSimulations(100);
+        metricsTwo.setChampion(probabilitiesTwo);
+        metricsTwo.setHighRanking(probabilitiesTwo);
+        metricsTwo.setLowRanking(probabilitiesTwo);
+
+        Map<Team, Double> expectedMergedProbabilities = new HashMap<>();
+        expectedMergedProbabilities.put(teamA, (20.0/110.0));
+        expectedMergedProbabilities.put(teamB, (90.0/110.0));
+
+        LeagueMetrics toTest = new LeagueMetrics(Lists.newArrayList(metricsOne, metricsTwo));
+
+        Assert.assertEquals(teamB, toTest.getMostLikelyChampion());
+        Assert.assertEquals(expectedMergedProbabilities, toTest.getChampion());
+        Assert.assertEquals(expectedMergedProbabilities, toTest.getHighRanking());
+        Assert.assertEquals(expectedMergedProbabilities, toTest.getLowRanking());
     }
 }

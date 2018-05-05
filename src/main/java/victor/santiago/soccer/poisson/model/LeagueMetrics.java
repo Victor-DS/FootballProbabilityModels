@@ -21,6 +21,8 @@
 
 package victor.santiago.soccer.poisson.model;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import lombok.Data;
@@ -29,6 +31,10 @@ import lombok.RequiredArgsConstructor;
 @Data
 @RequiredArgsConstructor
 public class LeagueMetrics {
+
+    private enum MapType {
+        CHAMPION, HIGH_RANKING, LOW_RANKING
+    }
 
     private final String leagueName;
 
@@ -40,9 +46,64 @@ public class LeagueMetrics {
     // Teams probabilities to end up in the low 5 positions;
     private Map<Team, Double> lowRanking;
 
+    private int numberOfSimulations;
+
+    public LeagueMetrics(List<LeagueMetrics> leagueMetricsList) {
+        if (leagueMetricsList.isEmpty()) {
+            String message = "List of league metrics must NOT be null.";
+            throw new IllegalArgumentException(message);
+        }
+
+        this.leagueName = leagueMetricsList.get(0).getLeagueName();
+        this.champion = getMergedMap(leagueMetricsList, MapType.CHAMPION);
+        this.highRanking = getMergedMap(leagueMetricsList, MapType.HIGH_RANKING);
+        this.lowRanking = getMergedMap(leagueMetricsList, MapType.LOW_RANKING);
+    }
+
+    private Map<Team, Double> getMergedMap(List<LeagueMetrics> metrics, MapType type) {
+        Map<Team, Double> mergedMap = new HashMap<>();
+
+        int totalSimulations = 0;
+        for (LeagueMetrics metric : metrics) {
+            for (Map.Entry<Team, Double> entry : getMap(metric, type).entrySet()) {
+                int finalTotalSimulations = totalSimulations;
+                mergedMap.merge(entry.getKey(), entry.getValue(), (key, value) ->
+                        getSumOfProbabilities(value, metric.getNumberOfSimulations(),
+                                mergedMap.getOrDefault(entry.getKey(), 0.0), finalTotalSimulations));
+            }
+            totalSimulations += metric.getNumberOfSimulations();
+        }
+
+        return mergedMap;
+    }
+
+    private Map<Team, Double> getMap(LeagueMetrics leagueMetrics, MapType type) {
+        if (type == MapType.CHAMPION) {
+            return leagueMetrics.getChampion();
+        } else if (type == MapType.HIGH_RANKING) {
+            return leagueMetrics.getHighRanking();
+        } else if (type == MapType.LOW_RANKING) {
+            return leagueMetrics.getLowRanking();
+        }
+
+        throw new IllegalArgumentException("Invalid type passed");
+    }
+
+    private double getSumOfProbabilities(double originalProbability, int numberOfSimulationsOnOriginal,
+                                         double mergedProbability, int numberOfSimulationsOnMerged) {
+        int totalSimulations = numberOfSimulationsOnMerged + numberOfSimulationsOnOriginal;
+
+        if (totalSimulations <= 0.0) {
+            return 0.0;
+        }
+
+        return ((originalProbability * numberOfSimulationsOnOriginal) + (mergedProbability * numberOfSimulationsOnMerged)) / totalSimulations;
+    }
+
     public Team getMostLikelyChampion() {
         return champion.entrySet().stream()
                        .max(Map.Entry.comparingByValue())
                        .get().getKey();
     }
+
 }
