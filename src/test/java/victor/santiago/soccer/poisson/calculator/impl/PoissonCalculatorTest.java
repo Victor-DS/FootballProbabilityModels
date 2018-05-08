@@ -19,7 +19,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.calculator;
+package victor.santiago.soccer.poisson.calculator.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,22 +28,23 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import victor.santiago.soccer.poisson.calculator.Calculator;
 import victor.santiago.soccer.poisson.model.Match;
 
 /**
  * Return values provided by Wolfram Alpha for individual calculations,
  * or manually calculated here to test correct filters.
  */
-public class CalculatorTest {
+public class PoissonCalculatorTest {
 
     private static final double DELTA = 0.001;
 
-    private Calculator toTest;
+    private PoissonCalculator toTest;
     private List<Match> sampleMatches;
 
     @Before
     public void setup() {
-        toTest = new Calculator();
+        toTest = new PoissonCalculator();
         sampleMatches = getSampleMatches();
     }
 
