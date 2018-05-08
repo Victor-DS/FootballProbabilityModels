@@ -29,6 +29,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import victor.santiago.soccer.poisson.model.League;
+import victor.santiago.soccer.poisson.model.Match;
 
 public class SerializerUtilTest {
 
@@ -42,6 +43,13 @@ public class SerializerUtilTest {
     @Test(expected = NoSuchFileException.class)
     public void shouldNotFindFile() throws Exception {
         SerializerUtil.getLeagues("invalid_path.json");
+    }
+
+    @Test
+    public void shouldParseListAndAddK() throws Exception {
+        final double k = 12.1;
+        List<Match> result = SerializerUtil.getMatchesFromLeaguesFilesWithK(k, "src/test/resources/sample.json");
+        Assert.assertTrue(result.stream().allMatch(x -> x.getK() == k));
     }
 
 }

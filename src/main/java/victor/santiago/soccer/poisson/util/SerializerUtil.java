@@ -42,6 +42,7 @@ import lombok.experimental.UtilityClass;
 
 import victor.santiago.soccer.poisson.model.League;
 import victor.santiago.soccer.poisson.model.LeagueMetrics;
+import victor.santiago.soccer.poisson.model.Match;
 import victor.santiago.soccer.poisson.model.Team;
 
 @UtilityClass
@@ -73,6 +74,35 @@ public class SerializerUtil {
         }
 
         return allLeagues;
+    }
+
+    /**
+     * Parses a list of Leagues from a JSON file path,
+     * and return a list of all its matches unsorted.
+     *
+     * @param path File path.
+     * @return List of leagues from the Json file.
+     * @throws IOException Thrown if can't read file.
+     */
+    public List<Match> getMatchesFromLeaguesFiles(String... paths) throws IOException {
+        List<League> leagues = getLeagues(paths);
+        List<Match> allMatches = new ArrayList<>();
+        leagues.forEach(x -> allMatches.addAll(x.getMatches()));
+        return allMatches;
+    }
+
+    /**
+     * Parses a list of Leagues from a JSON file path, sets a given K value to them
+     * and return a list of all its matches unsorted.
+     *
+     * @param path File path.
+     * @return List of leagues from the Json file.
+     * @throws IOException Thrown if can't read file.
+     */
+    public List<Match> getMatchesFromLeaguesFilesWithK(double k, String... paths) throws IOException {
+        List<Match> matches = getMatchesFromLeaguesFiles(paths);
+        matches.forEach(m -> m.setK(k));
+        return matches;
     }
 
     /**
