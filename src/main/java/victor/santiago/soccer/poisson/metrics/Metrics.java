@@ -42,11 +42,10 @@ public interface Metrics {
      * @param allMatches Raw list of past matches that can be used.
      * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param leaguesToSimulate The leagues to be simulated.
-     * @param goalLimit The goal limit for each match simulation.
      * @param simulations Number of simulations for each match.
      * @return A Map containing each league and its metrics.
      */
-    Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate, int goalLimit, int simulations);
+    Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate, int simulations);
 
     /**
      * Generate metrics for a list of leagues based on a raw list of matches,
@@ -60,9 +59,8 @@ public interface Metrics {
      * @param allMatches All the past matches to be used as input data.
      * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param leagueToSimulate The league to be simulated.
-     * @param goalLimit The goal limit for each match simulation.
      * @param simulations Number of simulations for each match.
      * @return The metrics for the league.
      */
-    LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate, int goalLimit, int simulations);
+    LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate, int simulations);
 }
