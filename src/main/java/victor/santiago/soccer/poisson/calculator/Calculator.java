@@ -28,7 +28,7 @@ import victor.santiago.soccer.poisson.model.MatchProbability;
 
 public interface Calculator {
 
-    List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches, int goalLimit);
+    List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches);
 
-    MatchProbability getMatchProbability(Match match, List<Match> pastMatches, int goalLimit);
+    MatchProbability getMatchProbability(Match match, List<Match> pastMatches);
 }

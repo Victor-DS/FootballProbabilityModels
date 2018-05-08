@@ -60,7 +60,6 @@ public class SimulationTest {
                            .build();
         List<Match> inputMatches = Collections.singletonList(match);
         final String league = "Campeonato Brasileiro";
-        final int goalLimit = 2;
         final int timesToSimulate = 10;
         final double[][] mockProbabilities = new double[][]{
                 {0.2, 0.2},
@@ -73,13 +72,13 @@ public class SimulationTest {
                                                            .scoreProbability(mockProbabilities)
                                                            .build();
 
-        when(calculator.getMatchProbability(eq(match), eq(Collections.emptyList()), eq(goalLimit)))
+        when(calculator.getMatchProbability(eq(match), eq(Collections.emptyList())))
                 .thenReturn(mockProbability);
 
         Map<Match, SimulatedMatch[]> simulations = toTest.simulate(league, inputMatches,
-                Collections.emptyList(), goalLimit, timesToSimulate);
+                Collections.emptyList(), timesToSimulate);
 
-        verify(calculator).getMatchProbability(eq(match), eq(Collections.emptyList()), eq(goalLimit));
+        verify(calculator).getMatchProbability(eq(match), eq(Collections.emptyList()));
         Assert.assertEquals(timesToSimulate, simulations.get(match).length);
     }
 }

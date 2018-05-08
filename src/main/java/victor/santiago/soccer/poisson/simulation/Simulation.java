@@ -24,7 +24,6 @@ package victor.santiago.soccer.poisson.simulation;
 import com.google.inject.Inject;
 
 import java.time.Instant;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -45,11 +44,10 @@ public class Simulation {
 
     private final Calculator calculator;
 
-    public Map<Match, SimulatedMatch[]> simulate(String leagueName, List<Match> matches, List<Match> pastMatches,
-                                                     int goalLimit, int times) {
+    public Map<Match, SimulatedMatch[]> simulate(String leagueName, List<Match> matches, List<Match> pastMatches, int times) {
         Map<Match, SimulatedMatch[]> simulatedMatches = new ConcurrentHashMap<>();
 
-        matches.parallelStream().forEach(match -> simulatedMatches.put(match, simulate(leagueName, match, pastMatches, goalLimit, times)));
+        matches.parallelStream().forEach(match -> simulatedMatches.put(match, simulate(leagueName, match, pastMatches, times)));
 
         return simulatedMatches;
     }
@@ -64,8 +62,8 @@ public class Simulation {
      * @param times The amount of times you want to simulate the given match.
      * @return A list of this match simulated N times.
      */
-    public SimulatedMatch[] simulate(String leagueName, Match match, List<Match> pastMatches, int goalLimit, int times) {
-        MatchProbability probability = calculator.getMatchProbability(match, pastMatches, goalLimit);
+    public SimulatedMatch[] simulate(String leagueName, Match match, List<Match> pastMatches, int times) {
+        MatchProbability probability = calculator.getMatchProbability(match, pastMatches);
         SimulatedMatch[] simulatedMatches = new SimulatedMatch[times];
 
         IntStream.range(0, times).parallel().forEach(
@@ -76,7 +74,7 @@ public class Simulation {
     }
 
     public SimulatedMatch[] simulate(Match match, List<Match> pastMatches, int goalLimit, int times) {
-        return simulate(NO_LEAGUE, match, pastMatches, goalLimit, times);
+        return simulate(NO_LEAGUE, match, pastMatches, times);
     }
 
     private SimulatedMatch getRandomSimulation(final String league, MatchProbability matchProbability, Match originalMatch) {

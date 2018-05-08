@@ -27,6 +27,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.ToIntFunction;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import victor.santiago.soccer.poisson.calculator.Calculator;
 import victor.santiago.soccer.poisson.model.Match;
 import victor.santiago.soccer.poisson.model.MatchProbability;
@@ -35,21 +38,31 @@ import victor.santiago.soccer.poisson.model.MatchProbability;
  * Poisson calculator.
  * We're assuming all matches that get here are already sorted.
  */
+@Data
+@RequiredArgsConstructor
 public class PoissonCalculator implements Calculator {
 
+    private static final int DEFAULT_GOAL_LIMIT = 5;
+
+    private final int goalLimit;
+
+    public  PoissonCalculator() {
+        goalLimit = DEFAULT_GOAL_LIMIT;
+    }
+
     @Override
-    public List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches, int goalLimit) {
+    public List<MatchProbability> getMatchesProbabilities(List<Match> futureMatches, List<Match> pastMatches) {
         List<MatchProbability> probabilities = new ArrayList<>();
 
         for (Match match : futureMatches) {
-            probabilities.add(getMatchProbability(match, pastMatches, goalLimit));
+            probabilities.add(getMatchProbability(match, pastMatches));
         }
 
         return probabilities;
     }
 
     @Override
-    public MatchProbability getMatchProbability(Match match, List<Match> pastMatches, int goalLimit) {
+    public MatchProbability getMatchProbability(Match match, List<Match> pastMatches) {
         final double expectedNumberOfHomeGoals = getExpectedHomeTeamGoals(match.getHome(), match.getAway(), pastMatches);
         final double expectedNumberOfAwayGoals = getExpectedAwayTeamGoals(match.getHome(), match.getAway(), pastMatches);
 

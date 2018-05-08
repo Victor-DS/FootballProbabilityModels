@@ -54,24 +54,24 @@ public class BrazilianChampionshipMetrics implements Metrics {
     private final Simulation simulator;
 
     @Override
-    public Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate,
-                                               int goalLimit, int simulations) {
+    public Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate, int simulations) {
         Collections.sort(allMatches);
+        Collections.synchronizedList(allMatches);
+        Collections.synchronizedList(leaguesToSimulate);
+
         Map<League, LeagueMetrics> results = new ConcurrentHashMap<>();
 
         leaguesToSimulate.parallelStream()
                          .forEach(league -> results.put(league,
-                                 generateMetricsForLeague(allMatches, historyLimit, league,
-                                         goalLimit, simulations, METRICS_BATCH_SIZE)));
+                                 generateMetricsForLeague(allMatches, historyLimit, league, simulations, METRICS_BATCH_SIZE)));
 
         return results;
     }
 
     @Override
-    public LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate,
-                                  int goalLimit, int simulations) {
+    public LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate, int simulations) {
         Collections.sort(allMatches);
-        return generateMetricsForLeague(allMatches, historyLimit, leagueToSimulate, goalLimit, simulations, METRICS_BATCH_SIZE);
+        return generateMetricsForLeague(allMatches, historyLimit, leagueToSimulate, simulations, METRICS_BATCH_SIZE);
     }
 
     /**
@@ -81,12 +81,11 @@ public class BrazilianChampionshipMetrics implements Metrics {
      * @param allMatches List of all past matches.
      * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param league League to be simulated.
-     * @param goalLimit Limit of goals to simulate on a single match.
      * @param simulations Number of simulations to be made by match.
      * @param batchSize Size of each individual simulation batch.
      * @return The unified league metrics.
      */
-    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league, int goalLimit,
+    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league,
                                                    int simulations, int batchSize) {
         final Date firstMatchDate = league.getMatches().get(0).getDate();
         final List<Match> limitedMatches = getLimitedMatchesBeforeDate(allMatches, firstMatchDate, historyLimit);
@@ -94,12 +93,12 @@ public class BrazilianChampionshipMetrics implements Metrics {
         List<LeagueMetrics> batchOfMetrics = new ArrayList<>();
 
         while (simulations > 0) {
-            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, goalLimit, simulations));
+            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, simulations));
             simulations -= batchSize;
         }
 
         if (simulations < 0) {
-            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, goalLimit, batchSize + simulations));
+            batchOfMetrics.add(generateMetricsForLeague(limitedMatches, league, batchSize + simulations));
         }
 
         return new LeagueMetrics(batchOfMetrics);
@@ -112,16 +111,14 @@ public class BrazilianChampionshipMetrics implements Metrics {
      * @param allMatches List of all past matches.
      * @param historyLimit Limit of matches to be used from the raw list. Use -1 to use all.
      * @param league League to be simulated.
-     * @param goalLimit Limit of goals to simulate on a single match.
      * @param simulations Number of simulations to be made by match.
      * @return The metrics from the simulations.
      */
     @Deprecated
-    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league,
-                                                   int goalLimit, int simulations) {
+    private LeagueMetrics generateMetricsForLeague(List<Match> allMatches, int historyLimit, League league, int simulations) {
         Date firstMatchDate = league.getMatches().get(0).getDate();
         List<Match> limitedMatches = getLimitedMatchesBeforeDate(allMatches, firstMatchDate, historyLimit);
-        return generateMetricsForLeague(limitedMatches, league, goalLimit, simulations);
+        return generateMetricsForLeague(limitedMatches, league, simulations);
     }
 
     /**
@@ -129,16 +126,15 @@ public class BrazilianChampionshipMetrics implements Metrics {
      *
      * @param limitedMatches List of all the matches that will be used on the calculations.
      * @param league The league to be simulated.
-     * @param goalLimit Limit of goals to simulate on a single match.
      * @param simulations Number of simulations to be made by match.
      * @return The metrics from the simulations.
      */
-    private LeagueMetrics generateMetricsForLeague(List<Match> limitedMatches, League league, int goalLimit, int simulations) {
+    private LeagueMetrics generateMetricsForLeague(List<Match> limitedMatches, League league, int simulations) {
         Map<Match, SimulatedMatch[]> simulatedMatches = new HashMap<>();
 
         for (Match match : league.getMatches()) {
             simulatedMatches.put(match, simulator.simulate(league.getName(), match,
-                    limitedMatches, goalLimit, simulations));
+                    limitedMatches, simulations));
             limitedMatches.add(match);
             limitedMatches.remove(0);
         }
