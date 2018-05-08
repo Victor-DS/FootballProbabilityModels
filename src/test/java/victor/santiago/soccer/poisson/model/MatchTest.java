@@ -21,48 +21,47 @@
 
 package victor.santiago.soccer.poisson.model;
 
-import java.util.Date;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
-import lombok.Builder;
-import lombok.Data;
+public class MatchTest {
 
-@Data
-@Builder
-public class Match implements Comparable<Match> {
+    Match homeWin, tie, homeLoss;
 
-    private static final double DEFAULT_K = 20;
+    @Before
+    public void setup() {
+        tie = Match.builder()
+                   .home("A")
+                   .homeGoals(0)
+                   .away("B")
+                   .awayGoals(0)
+                   .build();
 
-    public enum Result {
-        VICTORY, TIE, LOSS
+        homeWin = Match.builder()
+                       .home("A")
+                       .homeGoals(6)
+                       .away("B")
+                       .awayGoals(0)
+                       .build();
+
+        homeLoss = Match.builder()
+                        .home("A")
+                        .homeGoals(0)
+                        .away("B")
+                        .awayGoals(2)
+                        .build();
     }
 
-    private String home;
-    private String away;
-    private int homeGoals;
-    private int awayGoals;
-    private Date date;
-    private double k;
-
-    public Result getResult() {
-        if (homeGoals == awayGoals) {
-            return  Result.TIE;
-        } else if (homeGoals > awayGoals) {
-            return Result.VICTORY;
-        } else {
-            return Result.LOSS;
-        }
+    @Test
+    public void shouldReturnDefaultK() {
+        Assert.assertEquals(20.0, Match.builder().build().getK(), 0.00001);
     }
 
-    public double getK() {
-        if (k == 0) {
-            return DEFAULT_K;
-        }
-
-        return k;
-    }
-
-    @Override
-    public int compareTo(Match o) {
-        return this.date.compareTo(o.getDate());
+    @Test
+    public void shouldReturnCorrectResult() {
+        Assert.assertEquals(Match.Result.LOSS, homeLoss.getResult());
+        Assert.assertEquals(Match.Result.TIE, tie.getResult());
+        Assert.assertEquals(Match.Result.VICTORY, homeWin.getResult());
     }
 }
