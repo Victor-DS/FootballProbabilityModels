@@ -23,6 +23,7 @@ package victor.santiago.soccer.poisson.modules;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
+import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
 import victor.santiago.soccer.poisson.calculator.impl.EloCalculator;
@@ -40,12 +41,14 @@ public class Modules extends AbstractModule {
     protected void configure() { }
 
     @Provides
+    @Singleton
     @Named(BRAZILIAN_CHAMPIONSHIP_METRICS_POISSON)
     Metrics getBrazilianChampionshipPoissonBasedMetrics() {
         return new BrazilianChampionshipMetrics(new Simulation(new PoissonCalculator()));
     }
 
     @Provides
+    @Singleton
     @Named(BRAZILIAN_CHAMPIONSHIP_METRICS_ELO)
     Metrics getBrazilianChampionshipEloBasedMetrics() {
         return new BrazilianChampionshipMetrics(new Simulation(new EloCalculator()));
