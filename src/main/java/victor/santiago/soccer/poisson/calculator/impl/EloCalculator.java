@@ -88,11 +88,11 @@ public class EloCalculator implements Calculator {
     }
 
     private void calculateRatings(List<Match> matches) {
-        for (Match match : matches) {
+        matches.forEach(match -> {
             if (!alreadyCalculated.contains(match)) {
                 updateRatings(match);
             }
-        }
+        });
     }
 
     private void updateRatings(Match match) {
@@ -107,6 +107,8 @@ public class EloCalculator implements Calculator {
 
         ratings.put(home, newRatingHome);
         ratings.put(away, newRatingAway);
+
+        alreadyCalculated.add(match);
     }
 
     public double getNewRating(double pointDiff, String team) {
