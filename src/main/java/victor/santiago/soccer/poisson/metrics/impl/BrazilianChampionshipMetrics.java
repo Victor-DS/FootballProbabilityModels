@@ -56,14 +56,14 @@ public class BrazilianChampionshipMetrics implements Metrics {
     @Override
     public Map<League, LeagueMetrics> generate(List<Match> allMatches, int historyLimit, List<League> leaguesToSimulate, int simulations) {
         Collections.sort(allMatches);
-        Collections.synchronizedList(allMatches);
-        Collections.synchronizedList(leaguesToSimulate);
+        List<Match> pastMatches = Collections.synchronizedList(allMatches);
+        leaguesToSimulate = Collections.synchronizedList(leaguesToSimulate);
 
         Map<League, LeagueMetrics> results = new ConcurrentHashMap<>();
 
         leaguesToSimulate.parallelStream()
                          .forEach(league -> results.put(league,
-                                 generateMetricsForLeague(allMatches, historyLimit, league, simulations, METRICS_BATCH_SIZE)));
+                                 generateMetricsForLeague(pastMatches, historyLimit, league, simulations, METRICS_BATCH_SIZE)));
 
         return results;
     }
@@ -71,6 +71,7 @@ public class BrazilianChampionshipMetrics implements Metrics {
     @Override
     public LeagueMetrics generate(List<Match> allMatches, int historyLimit, League leagueToSimulate, int simulations) {
         Collections.sort(allMatches);
+        allMatches = Collections.synchronizedList(allMatches);
         return generateMetricsForLeague(allMatches, historyLimit, leagueToSimulate, simulations, METRICS_BATCH_SIZE);
     }
 
