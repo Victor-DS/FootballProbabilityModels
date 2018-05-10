@@ -19,37 +19,49 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package victor.santiago.soccer.poisson.util;
-
-import java.io.IOException;
-import java.nio.file.NoSuchFileException;
-import java.util.List;
+package victor.santiago.soccer.poisson.model;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import victor.santiago.soccer.poisson.model.League;
-import victor.santiago.soccer.poisson.model.Match;
+public class MatchTest {
 
-public class SerializerUtilTest {
+    Match homeWin, tie, homeLoss;
+
+    @Before
+    public void setup() {
+        tie = Match.builder()
+                   .home("A")
+                   .homeGoals(0)
+                   .away("B")
+                   .awayGoals(0)
+                   .build();
+
+        homeWin = Match.builder()
+                       .home("A")
+                       .homeGoals(6)
+                       .away("B")
+                       .awayGoals(0)
+                       .build();
+
+        homeLoss = Match.builder()
+                        .home("A")
+                        .homeGoals(0)
+                        .away("B")
+                        .awayGoals(2)
+                        .build();
+    }
 
     @Test
-    public void shouldParseList() throws IOException {
-        List<League> result = SerializerUtil.getLeagues("src/test/resources/sample.json");
-        Assert.assertEquals(2, result.size());
-        Assert.assertEquals("Palmeiras", result.get(0).getChampion());
-    }
-
-    @Test(expected = NoSuchFileException.class)
-    public void shouldNotFindFile() throws Exception {
-        SerializerUtil.getLeagues("invalid_path.json");
+    public void shouldReturnDefaultK() {
+        Assert.assertEquals(20.0, Match.builder().build().getK(), 0.00001);
     }
 
     @Test
-    public void shouldParseListAndAddK() throws Exception {
-        final double k = 12.1;
-        List<Match> result = SerializerUtil.getMatchesFromLeaguesFilesWithK(k, "src/test/resources/sample.json");
-        Assert.assertTrue(result.stream().allMatch(x -> x.getK() == k));
+    public void shouldReturnCorrectResult() {
+        Assert.assertEquals(Match.Result.LOSS, homeLoss.getResult());
+        Assert.assertEquals(Match.Result.TIE, tie.getResult());
+        Assert.assertEquals(Match.Result.VICTORY, homeWin.getResult());
     }
-
 }

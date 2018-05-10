@@ -29,11 +29,37 @@ import lombok.Data;
 @Data
 @Builder
 public class Match implements Comparable<Match> {
+
+    private static final double DEFAULT_K = 20;
+
+    public enum Result {
+        VICTORY, TIE, LOSS
+    }
+
     private String home;
     private String away;
     private int homeGoals;
     private int awayGoals;
     private Date date;
+    private double k;
+
+    public Result getResult() {
+        if (homeGoals == awayGoals) {
+            return  Result.TIE;
+        } else if (homeGoals > awayGoals) {
+            return Result.VICTORY;
+        } else {
+            return Result.LOSS;
+        }
+    }
+
+    public double getK() {
+        if (k == 0) {
+            return DEFAULT_K;
+        }
+
+        return k;
+    }
 
     @Override
     public int compareTo(Match o) {

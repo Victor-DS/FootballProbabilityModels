@@ -24,33 +24,33 @@ package victor.santiago.soccer.poisson.modules;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
+import com.google.inject.name.Named;
 
-import victor.santiago.soccer.poisson.calculator.Calculator;
+import victor.santiago.soccer.poisson.calculator.impl.EloCalculator;
+import victor.santiago.soccer.poisson.calculator.impl.PoissonCalculator;
 import victor.santiago.soccer.poisson.metrics.Metrics;
 import victor.santiago.soccer.poisson.metrics.impl.BrazilianChampionshipMetrics;
 import victor.santiago.soccer.poisson.simulation.Simulation;
 
 public class Modules extends AbstractModule {
+
+    public static final String BRAZILIAN_CHAMPIONSHIP_METRICS_POISSON = "BrazilianChampionshipWithPoisson";
+    public static final String BRAZILIAN_CHAMPIONSHIP_METRICS_ELO = "BrazilianChampionshipWithElo";
+
     @Override
-    protected void configure() {
-        bind(Metrics.class).to(BrazilianChampionshipMetrics.class);
+    protected void configure() { }
+
+    @Provides
+    @Singleton
+    @Named(BRAZILIAN_CHAMPIONSHIP_METRICS_POISSON)
+    Metrics getBrazilianChampionshipPoissonBasedMetrics() {
+        return new BrazilianChampionshipMetrics(new Simulation(new PoissonCalculator()));
     }
 
     @Provides
     @Singleton
-    Calculator getCalculator() {
-        return new Calculator();
-    }
-
-    @Provides
-    @Singleton
-    Simulation getSimulation() {
-        return new Simulation(getCalculator());
-    }
-
-    @Provides
-    @Singleton
-    BrazilianChampionshipMetrics getBrazilianChampionshipMetrics() {
-        return new BrazilianChampionshipMetrics(getSimulation());
+    @Named(BRAZILIAN_CHAMPIONSHIP_METRICS_ELO)
+    Metrics getBrazilianChampionshipEloBasedMetrics() {
+        return new BrazilianChampionshipMetrics(new Simulation(new EloCalculator()));
     }
 }
