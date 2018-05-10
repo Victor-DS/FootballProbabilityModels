@@ -50,7 +50,6 @@ List<League> leaguesToSimulate = SerializerUtil.getLeagues("/Users/Me/LeaguesToS
 
 List<Match> allMatches = new ArrayList<>();
 allLeagues.forEach(x -> allMatches.addAll(x.getMatches()));
-```
 
 final int simulations = 100 * 1000;
 final int historyLimit = -1; // Define the limit of matches to use as history to calculate probabilities, or use -1 to use it all.
