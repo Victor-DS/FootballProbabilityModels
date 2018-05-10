@@ -1,5 +1,6 @@
 # SoccerPoisson
 [![CircleCI](https://circleci.com/gh/Victor-DS/SoccerPoisson.svg?style=svg)](https://circleci.com/gh/Victor-DS/SoccerPoisson)
+
 A collection of probability models for predicting the outcome of football matches and entire leagues.
 
 ## Elo-based model
