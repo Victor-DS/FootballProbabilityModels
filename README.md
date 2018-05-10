@@ -1,14 +1,25 @@
 # SoccerPoisson
 [![CircleCI](https://circleci.com/gh/Victor-DS/SoccerPoisson.svg?style=svg)](https://circleci.com/gh/Victor-DS/SoccerPoisson)[![codecov](https://codecov.io/gh/Victor-DS/SoccerPoisson/branch/master/graph/badge.svg)](https://codecov.io/gh/Victor-DS/SoccerPoisson)
 
-A poisson-based model to calculate probabilities in soccer matches.
+A collection of probability models for predicting the outcome of football matches and entire leagues.
 
-## Poisson Distribution
+## Elo-based model
+From Wikipedia:
+
+> The Elo rating system is a method for calculating the relative skill levels of players in competitor-versus-competitor games such as chess. It is named after its creator Arpad Elo, a Hungarian-born American physics professor.
+
+### Soccer Model
+This implementation has a few tweaks to adjust to soccer matches, more notably, the addition of a variable that changes the points spread in a given match according to the goal difference.
+
+For detailed information about the formulas and a bit more of theory, please visit the [Wikipedia Page](https://en.wikipedia.org/wiki/World_Football_Elo_Ratings).
+
+
+## Poisson-based model
 > In probability theory and statistics, the Poisson distribution, named after French mathematician Siméon Denis Poisson, is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant rate and independently of the time since the last event.
 
 [Wikipedia](https://en.wikipedia.org/wiki/Poisson_distribution)
 
-## Soccer Model
+### Soccer Model
 The idea behind this model is that the number of goals scored by a team is a Poisson distribution and independent from the other team.
 
 Having that in mind, we calculate the expected number of goals that both teams team would score (considering the team's past matches), and calculate all the score probabilities with a given goal limit.
@@ -27,7 +38,8 @@ First, you create your injector and get your League metrics instance:
 
 ```java
 Injector injector = Guice.createInjector(new Modules());
-Metrics metrics = injector.getInstance(BrazilianChampionshipMetrics.class);
+final Key<Metrics> key = Key.get(Metrics.class, Names.named(Modules.BRAZILIAN_CHAMPIONSHIP_METRICS_ELO)); //Or Modules.BRAZILIAN_CHAMPIONSHIP_METRICS_POISSON
+Metrics metrics = injector.getInstance(key);
 ```
 
 Then, just serialize your data, and generate your metrics:
@@ -39,9 +51,9 @@ List<League> leaguesToSimulate = SerializerUtil.getLeagues("/Users/Me/LeaguesToS
 List<Match> allMatches = new ArrayList<>();
 allLeagues.forEach(x -> allMatches.addAll(x.getMatches()));
 
-final int goalLimit = 5;
 final int simulations = 100 * 1000;
-Map<League, LeagueMetrics> leagueMetrics = metrics.generate(allMatches, leaguesToSimulate, goalLimit, simulations);
+final int historyLimit = -1; // Define the limit of matches to use as history to calculate probabilities, or use -1 to use it all.
+Map<League, LeagueMetrics> leagueMetrics = metrics.generate(allMatches, historyLimit, leaguesToSimulate, simulations);
 ```
 
 Then, finally you can just serialize your data to a CSV file and use it however you'd like it.
@@ -53,8 +65,8 @@ SerializerUtil.saveMetricsToCsv("/Users/victords/TCC/Dados/MyCSV.csv", leagueMet
 ## TODO
 - [x] Input leagues and matches from JSON;
 - [x] Poisson calculations model;
-- [ ] Implement a CLI to be used in an EC2;
-- [ ] Generate 100,000 simulations for each modern Brazilian championship;
+- [x] Elo calculations model;
+- [ ] Implement metrics for more types of championships;
 
 ## LICENSE
 ```
