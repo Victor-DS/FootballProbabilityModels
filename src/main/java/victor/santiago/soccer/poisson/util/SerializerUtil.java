@@ -134,8 +134,7 @@ public class SerializerUtil {
         final String line = String.format("%s,%s,%s,%s,%s", leagueMetrics.getLeagueName(), mostLikelyChampion.getName(),
                 champion.get(mostLikelyChampion), highRanking, lowRanking);
 
-        return Normalizer.normalize(line, Normalizer.Form.NFD)
-                         .replaceAll("[^\\p{ASCII}]", "");
+        return normalizeText(line);
     }
 
     private String mapKeysToSortedString(Map<Team, Double> map, int limit) {
@@ -144,6 +143,11 @@ public class SerializerUtil {
                   .map(x -> x.getKey().getName())
                   .limit(limit)
                   .collect(joining("/"));
+    }
+
+    public String normalizeText(String s) {
+        return Normalizer.normalize(s, Normalizer.Form.NFD)
+                         .replaceAll("[^\\p{ASCII}]", "");
     }
 
 }

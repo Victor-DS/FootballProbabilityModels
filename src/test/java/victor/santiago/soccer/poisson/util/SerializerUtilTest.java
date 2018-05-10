@@ -52,4 +52,9 @@ public class SerializerUtilTest {
         Assert.assertTrue(result.stream().allMatch(x -> x.getK() == k));
     }
 
+    @Test
+    public void shouldNormalizeText() {
+        Assert.assertEquals("Sao Paulo", SerializerUtil.normalizeText("São Paulo"));
+    }
+
 }
