@@ -180,7 +180,7 @@ public class BrazilianChampionshipMetrics implements Metrics {
         return matches;
     }
 
-    private List<Standing> generateStandings(List<SimulatedMatch> matchesFromLeague) {
+    public List<Standing> generateStandings(List<SimulatedMatch> matchesFromLeague) {
         Map<Team, Standing> teamStanding = new HashMap<>();
 
         for (SimulatedMatch match : matchesFromLeague) {

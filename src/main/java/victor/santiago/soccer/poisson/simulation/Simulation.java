@@ -24,6 +24,7 @@ package victor.santiago.soccer.poisson.simulation;
 import com.google.inject.Inject;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -40,7 +41,7 @@ import victor.santiago.soccer.poisson.model.SimulatedMatch;
 @AllArgsConstructor(onConstructor = @__(@Inject))
 public class Simulation {
 
-    private static final String NO_LEAGUE = "UNKOWN";
+    private static final String NO_LEAGUE = "UNKNOWN";
 
     private final Calculator calculator;
 
@@ -63,7 +64,7 @@ public class Simulation {
      * @return A list of this match simulated N times.
      */
     public SimulatedMatch[] simulate(String leagueName, Match match, List<Match> pastMatches, int times) {
-        MatchProbability probability = calculator.getMatchProbability(match, pastMatches);
+        MatchProbability probability = calculator.getMatchProbability(match, new ArrayList<>(pastMatches));
         SimulatedMatch[] simulatedMatches = new SimulatedMatch[times];
 
         IntStream.range(0, times).parallel().forEach(
@@ -73,7 +74,7 @@ public class Simulation {
         return simulatedMatches;
     }
 
-    public SimulatedMatch[] simulate(Match match, List<Match> pastMatches, int goalLimit, int times) {
+    public SimulatedMatch[] simulate(Match match, List<Match> pastMatches, int times) {
         return simulate(NO_LEAGUE, match, pastMatches, times);
     }
 
