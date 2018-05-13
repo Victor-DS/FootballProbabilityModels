@@ -22,6 +22,7 @@
 package victor.santiago.soccer.poisson.util;
 
 import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -138,11 +139,13 @@ public class SerializerUtil {
     }
 
     private String mapKeysToSortedString(Map<Team, Double> map, int limit) {
-        return map.entrySet().stream()
+        List<String> teams = map.entrySet().stream()
                   .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
                   .map(x -> x.getKey().getName())
                   .limit(limit)
-                  .collect(joining("/"));
+                  .collect(toList());
+
+        return teams.stream().sorted().collect(joining("/"));
     }
 
     public String normalizeText(String s) {
