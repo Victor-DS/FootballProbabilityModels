@@ -1,12 +1,12 @@
-# SoccerPoisson
+# Football Probability Models
 [![CircleCI](https://circleci.com/gh/Victor-DS/FootballProbabilityModels.svg?style=svg)](https://circleci.com/gh/Victor-DS/FootballProbabilityModels)
 
 A collection of probability models for predicting the outcome of football matches and entire leagues.
 
 ## Elo-based model
-From Wikipedia:
-
 > The Elo rating system is a method for calculating the relative skill levels of players in competitor-versus-competitor games such as chess. It is named after its creator Arpad Elo, a Hungarian-born American physics professor.
+
+[Wikipedia](https://en.wikipedia.org/wiki/Elo_rating_system)
 
 ### Soccer Model
 This implementation has a few tweaks to adjust to soccer matches, more notably, the addition of a variable that changes the points spread in a given match according to the goal difference.
