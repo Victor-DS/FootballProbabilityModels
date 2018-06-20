@@ -21,6 +21,7 @@
 
 package victor.santiago.soccer.poisson.model;
 
+import com.google.common.collect.ComparisonChain;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -91,18 +92,10 @@ public class Standing implements Comparable<Standing> {
 
     @Override
     public int compareTo(Standing o) {
-        int pointsComparison = Integer.compare(o.getPoints(), this.getPoints());
-
-        if (pointsComparison != 0) {
-            return pointsComparison;
-        }
-
-        int goalsDifferenceComparison = Integer.compare(o.getGoalDifference(), this.getGoalDifference());
-
-        if (goalsDifferenceComparison != 0) {
-            return goalsDifferenceComparison;
-        }
-
-        return Integer.compare(o.getGoalsFor(), this.getGoalsFor());
+        return ComparisonChain.start()
+                .compare(o.getPoints(), this.getPoints())
+                .compare(o.getGoalDifference(), this.getGoalDifference())
+                .compare(o.getGoalsFor(), this.getGoalsFor())
+                .result();
     }
 }
