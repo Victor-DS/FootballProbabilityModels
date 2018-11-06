@@ -33,6 +33,8 @@ import java.util.function.ToIntFunction;
 
 import static java.util.stream.Collectors.toList;
 
+import com.google.common.annotations.VisibleForTesting;
+
 /**
  * Poisson calculator.
  * We're assuming all matches that get here are already sorted.
@@ -93,7 +95,8 @@ public class PoissonCalculator implements Calculator {
      * @param expectedNumberOfGoals The expected number of goals calculated previously.
      * @return
      */
-    public double getPoissonProbability(int numberOfGoals, double expectedNumberOfGoals) {
+    @VisibleForTesting
+    double getPoissonProbability(int numberOfGoals, double expectedNumberOfGoals) {
         return Math.pow(expectedNumberOfGoals, numberOfGoals) *
                 Math.pow(Math.E, -expectedNumberOfGoals) / factorial(numberOfGoals);
     }
@@ -113,7 +116,8 @@ public class PoissonCalculator implements Calculator {
         return n * factorial(n - 1);
     }
 
-    public double getExpectedHomeTeamGoals(String home, String away, List<Match> allMatches) {
+    @VisibleForTesting
+    double getExpectedHomeTeamGoals(String home, String away, List<Match> allMatches) {
         double homeTeamAttackStrength = getHomeTeamsAttackStrength(home, allMatches);
         double awayTeamDefensiveStrength = getAwayTeamsDefensiveStrength(away, allMatches);
 
@@ -123,7 +127,7 @@ public class PoissonCalculator implements Calculator {
         return homeTeamAttackStrength * awayTeamDefensiveStrength * averageGoalsAtHome;
     }
 
-    public double getExpectedAwayTeamGoals(String home, String away, List<Match> allMatches) {
+    private double getExpectedAwayTeamGoals(String home, String away, List<Match> allMatches) {
         double awayTeamAttackStrength = getAwayTeamsAttackStrength(away, allMatches);
         double homeTeamDefensiveStrength = getHomeTeamsDefensiveStrength(home, allMatches);
 
@@ -141,7 +145,8 @@ public class PoissonCalculator implements Calculator {
      * @param allMatches All league matches.
      * @return Team's attack strength.
      */
-    public double getHomeTeamsAttackStrength(String homeTeam, List<Match> allMatches) {
+    @VisibleForTesting
+    double getHomeTeamsAttackStrength(String homeTeam, List<Match> allMatches) {
         double allHomeTeamAverageGoals = getAverageGoalsScoredAtHome(allMatches);
 
         List<Match> homeTeamMatches = allMatches.stream().filter(x -> x.getHome().equals(homeTeam)).collect(toList());
@@ -158,7 +163,7 @@ public class PoissonCalculator implements Calculator {
      * @param allMatches All league matches.
      * @return Team's attack strength.
      */
-    public double getAwayTeamsAttackStrength(String awayTeam, List<Match> allMatches) {
+    private double getAwayTeamsAttackStrength(String awayTeam, List<Match> allMatches) {
         double allAwayTeamsAverageGoals = getAverageGoalsScoredAway(allMatches);
 
         List<Match> awayTeamMatches = allMatches.stream().filter(x -> x.getAway().equals(awayTeam)).collect(toList());
@@ -176,7 +181,8 @@ public class PoissonCalculator implements Calculator {
      * @param allMatches All league matches.
      * @return Team's defensive strength.
      */
-    public double getHomeTeamsDefensiveStrength(String homeTeam, List<Match> allMatches) {
+    @VisibleForTesting
+    double getHomeTeamsDefensiveStrength(String homeTeam, List<Match> allMatches) {
         double allHomeTeamAverageGoals = getAverageGoalsConcealedAtHome(allMatches);
 
         List<Match> homeTeamMatches = allMatches.stream().filter(x -> x.getHome().equals(homeTeam)).collect(toList());
@@ -193,7 +199,7 @@ public class PoissonCalculator implements Calculator {
      * @param allMatches All league matches.
      * @return Team's defensive strength.
      */
-    public double getAwayTeamsDefensiveStrength(String awayTeam, List<Match> allMatches) {
+    private double getAwayTeamsDefensiveStrength(String awayTeam, List<Match> allMatches) {
         double allAwayTeamAverageGoals = getAverageGoalsConcealedAway(allMatches);
 
         List<Match> awayTeamMatches = allMatches.stream().filter(x -> x.getAway().equals(awayTeam)).collect(toList());
@@ -202,19 +208,23 @@ public class PoissonCalculator implements Calculator {
         return targetAwayTeamAverageGoals / allAwayTeamAverageGoals;
     }
 
-    public double getAverageGoalsScoredAtHome(List<Match> matches) {
+    @VisibleForTesting
+    double getAverageGoalsScoredAtHome(List<Match> matches) {
         return  getAverageGoals(matches, Match::getHomeGoals);
     }
 
-    public double getAverageGoalsScoredAway(List<Match> matches) {
+    @VisibleForTesting
+    double getAverageGoalsScoredAway(List<Match> matches) {
         return  getAverageGoals(matches, Match::getAwayGoals);
     }
 
-    public double getAverageGoalsConcealedAtHome(List<Match> matches) {
+    @VisibleForTesting
+    double getAverageGoalsConcealedAtHome(List<Match> matches) {
         return getAverageGoalsScoredAway(matches);
     }
 
-    public double getAverageGoalsConcealedAway(List<Match> matches) {
+    @VisibleForTesting
+    double getAverageGoalsConcealedAway(List<Match> matches) {
         return  getAverageGoalsScoredAtHome(matches);
     }
 

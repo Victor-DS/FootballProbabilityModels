@@ -21,10 +21,12 @@
 
 package me.victorsantiago.footballprobabilitymodel.metrics.impl;
 
+import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import com.google.inject.Inject;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import me.victorsantiago.footballprobabilitymodel.metrics.Metrics;
 import me.victorsantiago.footballprobabilitymodel.model.*;
 import me.victorsantiago.footballprobabilitymodel.simulation.Simulation;
@@ -33,6 +35,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class BrazilianChampionshipMetrics implements Metrics {
 
@@ -168,7 +171,8 @@ public class BrazilianChampionshipMetrics implements Metrics {
         return matches;
     }
 
-    public List<Standing> generateStandings(List<SimulatedMatch> matchesFromLeague) {
+    @VisibleForTesting
+    List<Standing> generateStandings(List<SimulatedMatch> matchesFromLeague) {
         Map<Team, Standing> teamStanding = new HashMap<>();
 
         for (SimulatedMatch match : matchesFromLeague) {

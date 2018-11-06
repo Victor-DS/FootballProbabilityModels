@@ -21,6 +21,8 @@
 
 package me.victorsantiago.footballprobabilitymodel.calculator.impl;
 
+import com.google.common.annotations.VisibleForTesting;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -29,6 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+
 import me.victorsantiago.footballprobabilitymodel.calculator.Calculator;
 import me.victorsantiago.footballprobabilitymodel.model.Match;
 import me.victorsantiago.footballprobabilitymodel.model.MatchProbability;
@@ -110,11 +113,11 @@ public class EloCalculator implements Calculator {
         alreadyCalculated.add(match);
     }
 
-    public double getNewRating(double pointDiff, String team) {
+    private double getNewRating(double pointDiff, String team) {
         return ratings.getOrDefault(team, initialEloRating) + pointDiff;
     }
 
-    public double getPointsDifference(Match match, boolean home) {
+    private double getPointsDifference(Match match, boolean home) {
         String a = home ? match.getHome() : match.getAway();
         String b = !home ? match.getHome() : match.getAway();
 
@@ -125,7 +128,8 @@ public class EloCalculator implements Calculator {
         return match.getK() * goalDifferenceIndex * (matchResultValue - winningExpectancy);
     }
 
-    public double getMatchResultValue(Match match, boolean home) {
+    @VisibleForTesting
+    double getMatchResultValue(Match match, boolean home) {
         Match.Result matchResult = match.getResult();
 
         switch (matchResult) {
@@ -143,7 +147,8 @@ public class EloCalculator implements Calculator {
         }
     }
 
-    public double getGoalDifferenceIndex(Match match) {
+    @VisibleForTesting
+    double getGoalDifferenceIndex(Match match) {
         int diff = Math.abs(match.getHomeGoals() - match.getAwayGoals());
 
         if (diff == 0 || diff == 1) {
@@ -155,7 +160,8 @@ public class EloCalculator implements Calculator {
         return (11.00 + ((double) diff)) / 8.00;
     }
 
-    public double getWinningExpectancy(String a, String b) {
+    @VisibleForTesting
+    double getWinningExpectancy(String a, String b) {
         return 1.00 / (Math.pow(10.00, (-getRatingDifference(a, b) / 400.00)) + 1.00);
     }
 
