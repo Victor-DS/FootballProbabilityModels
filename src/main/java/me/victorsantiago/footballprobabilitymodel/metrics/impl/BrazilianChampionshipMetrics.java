@@ -25,17 +25,27 @@ import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import com.google.inject.Inject;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import me.victorsantiago.footballprobabilitymodel.metrics.Metrics;
-import me.victorsantiago.footballprobabilitymodel.model.*;
-import me.victorsantiago.footballprobabilitymodel.simulation.Simulation;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-@Slf4j
+import lombok.RequiredArgsConstructor;
+
+import me.victorsantiago.footballprobabilitymodel.metrics.Metrics;
+import me.victorsantiago.footballprobabilitymodel.model.League;
+import me.victorsantiago.footballprobabilitymodel.model.LeagueMetrics;
+import me.victorsantiago.footballprobabilitymodel.model.Match;
+import me.victorsantiago.footballprobabilitymodel.model.SimulatedMatch;
+import me.victorsantiago.footballprobabilitymodel.model.Standing;
+import me.victorsantiago.footballprobabilitymodel.model.Team;
+import me.victorsantiago.footballprobabilitymodel.simulation.Simulation;
+
 @RequiredArgsConstructor(onConstructor = @__(@Inject))
 public class BrazilianChampionshipMetrics implements Metrics {
 
